@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BF000000"
+    android:padding="10dp"
+    tools:context="com.ecotechmarine.ecosmartlive_android.ScheduleNavigationOverlay">
+
+    <TextView
+        android:id="@+id/device_missing_nav_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settings_view_bg"
+        android:text="@string/device_type_missing"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginBottom="1dp"
+        android:padding="20dp"
+        android:layout_above="@+id/radion_nav_button"/>
+
+    <Button
+        android:id="@+id/radion_nav_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settings_view_bg"
+        android:text="@string/radion"
+        android:textSize="22sp"
+        android:textColor="@color/RoyalBlue"
+        android:gravity="center"
+        android:layout_marginBottom="1dp"
+        android:padding="20dp"
+        android:layout_above="@+id/vortech_nav_button"/>
+
+    <Button
+        android:id="@+id/vortech_nav_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settings_view_bg"
+        android:text="@string/vortech"
+        android:textSize="22sp"
+        android:textColor="@color/RoyalBlue"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_above="@+id/cancel_nav_button"/>
+
+    <Button
+        android:id="@+id/cancel_nav_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settings_view_bg"
+        android:text="@string/cancel"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/RoyalBlue"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

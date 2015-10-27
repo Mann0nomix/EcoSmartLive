@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/progress_layout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#BF000000">
+
+    <ProgressBar
+        android:id="@+id/program_progress"
+        android:layout_width="match_parent"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/reset_progress_drawable"
+        android:max="100"
+        android:layout_height="10dp"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/schedule_updating"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="22dp"
+        android:textColor="@color/White"
+        android:layout_above="@+id/program_progress"
+        android:layout_marginBottom="30dp"
+        android:text="@string/saving_schedule"
+        android:gravity="center"/>
+
+    <ProgressBar
+        android:id="@+id/reset_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

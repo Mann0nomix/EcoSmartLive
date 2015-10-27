@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/child_selector">
+
+    <TextView
+        android:id="@+id/point_selection_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/custom"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_centerVertical="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/point_selection_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=">"
+        android:textSize="30sp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="40dp"/>
+
+    <TextView
+        android:id="@+id/point_selection_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/point_selection_arrow"
+        android:layout_centerVertical="true"
+        android:paddingRight="20dp"
+        android:textSize="22sp"/>
+
+</RelativeLayout>

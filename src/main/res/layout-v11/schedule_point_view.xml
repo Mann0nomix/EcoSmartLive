@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.ecotechmarine.ecosmartlive_android.SchedulePointView">
+
+    <ExpandableListView
+        android:id="@+id/edit_point_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@drawable/child_selector">
+
+    </ExpandableListView>
+
+    <RelativeLayout
+        android:id="@+id/time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:background="#A6000000">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/DodgerBlue"
+            android:layout_above="@+id/timepicker">
+
+            <TextView
+                android:id="@+id/time_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="@string/cancel"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/time_done"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="@string/done"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:paddingTop="20dp"
+                android:paddingRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical|end"/>
+
+        </RelativeLayout>
+
+        <TimePicker
+            android:id="@+id/timepicker"
+            android:layout_height="225dp"
+            android:layout_width="match_parent"
+            android:background="@color/black"
+            android:layout_alignParentBottom="true">
+        </TimePicker>
+
+    </RelativeLayout>
+
+</RelativeLayout>

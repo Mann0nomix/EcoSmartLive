@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NavigationWheel">
+
+    <ViewFlipper
+        android:id="@+id/screenFlip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/new_wheel_bg"
+            android:id="@+id/nav_main_layout"
+            tools:context=".ColorsView">
+
+            <TextView
+                android:id="@+id/alpha_background"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:background="@color/Black"
+                android:alpha=".5"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true" />
+
+            <ImageView android:id="@+id/save_preset_button"
+                android:contentDescription="Save_Preset"
+                android:layout_height="40dp"
+                android:layout_width="40dp"
+                android:src="@drawable/button_save_preset"
+                android:clickable="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView android:id="@+id/back_to_schedule_button"
+                android:contentDescription="Back to Schedule"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/icon_calendar"
+                android:clickable="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView android:id="@+id/dropcam_background"
+                android:contentDescription="Dropcam Background"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/icon_video"
+                android:clickable="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/color_wheel_bubble"
+                android:contentDescription="Color Label"
+                android:layout_width="125dp"
+                android:layout_height="70dp"
+                android:gravity="center_horizontal"
+                android:background="@drawable/color_wheel_bubble"
+                android:layout_above="@+id/invis_circle"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/circle_detail"
+                android:textSize="24dp"
+                android:fontFamily="Condensed Regular"
+                android:textColor="@color/DodgerBlue"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="14dp"
+                android:layout_alignTop="@+id/color_wheel_bubble"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/kelvin_button"
+                android:background="@drawable/nav_button_on"
+                android:textColor="@color/white"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:text="@string/kelvin"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/rgb_button"
+                android:background="@drawable/nav_button_off"
+                android:textColor="@color/white"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:text="@string/rgb"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/slider_button"
+                android:background="@drawable/nav_button_off"
+                android:textColor="@color/white"
+                android:shape="rectangle"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:text="@string/slider"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"/>
+
+            <ImageView
+                android:id="@+id/invis_circle"
+                android:contentDescription="Kelvin Wheel"
+                android:layout_height="345dp"
+                android:layout_width="345dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circle_slider_kelvin_no_labels"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/label5k"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5K"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/color_wheel_bubble"
+                android:layout_below="@id/color_wheel_bubble"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:id="@+id/label20k"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20K"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:layout_toLeftOf="@id/color_wheel_bubble"
+                android:layout_below="@id/color_wheel_bubble"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="30dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:background="@color/White">
+
+            <ExpandableListView
+                android:id="@+id/preset_list"
+                android:scrollingCache="false"
+                android:fadingEdge="none"
+                android:groupIndicator="@android:color/transparent"
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:transcriptMode="normal"/>
+
+            <ProgressBar
+                android:id="@+id/preset_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/mode_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            tools:context=".PreviewModeView"
+            android:background="@color/GhostWhite">
+
+            <TextView
+                android:id="@+id/mode_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/preview_modes"
+                android:textSize="22dp"
+                android:layout_marginBottom="10dp"/>
+
+            <GridView
+                android:id="@+id/previews_grid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="2"
+                android:columnWidth="90dp"
+                android:horizontalSpacing="10dp"
+                android:verticalSpacing="10dp"
+                android:gravity="center"
+                android:stretchMode="columnWidth"
+                android:layout_below="@+id/mode_title" />
+
+        </RelativeLayout>
+
+        <include android:id="@+id/schedule_main_layout"
+            layout="@layout/schedule_main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:id="@+id/settings_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <ListView
+                android:id="@+id/settings_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <WebView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/dropcam_view"
+                    android:background="@color/Black">
+
+                </WebView>
+
+            <ProgressBar
+                android:id="@+id/dropcam_progress"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center|bottom"
+                android:layout_marginBottom="10dp"
+                android:visibility="invisible"/>
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/pump_live_demo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/pump_background"
+                android:contentDescription="Pump Background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/login_bg_photo"/>
+
+            <ImageView android:id="@+id/pump_save_preset_button"
+                android:contentDescription="Save_Preset"
+                android:layout_height="40dp"
+                android:layout_width="40dp"
+                android:src="@drawable/button_save_preset"
+                android:clickable="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView android:id="@+id/pump_schedule_button"
+                android:contentDescription="Back to Schedule"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/icon_calendar"
+                android:clickable="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView android:id="@+id/pulse_info"
+                android:contentDescription="Pulse Info"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/icon_graph"
+                android:clickable="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/feed_mode_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feed_mode"
+                android:textColor="@color/SkyBlue"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/pump_schedule_button"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="6dp"/>
+
+            <ImageView
+                android:id="@+id/pump_color_wheel_bubble"
+                android:contentDescription="Color Label"
+                android:layout_width="125dp"
+                android:layout_height="70dp"
+                android:gravity="center_horizontal"
+                android:background="@drawable/color_wheel_bubble"
+                android:layout_above="@+id/pump_circle"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/pump_circle_detail"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="24sp"
+                android:fontFamily="Condensed Regular"
+                android:textColor="@color/DodgerBlue"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="14dp"
+                android:layout_alignTop="@+id/pump_color_wheel_bubble"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:id="@+id/pump_circle"
+                android:contentDescription="Kelvin Wheel"
+                android:layout_height="345dp"
+                android:layout_width="345dp"
+                android:layout_gravity="center"
+                android:src="@drawable/circle_slider_kelvin_no_labels"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:id="@+id/min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/min"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/pump_color_wheel_bubble"
+                android:layout_below="@id/pump_color_wheel_bubble"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:id="@+id/max_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/max"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:layout_toLeftOf="@id/pump_color_wheel_bubble"
+                android:layout_below="@id/pump_color_wheel_bubble"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:id="@+id/pumps_in_group"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:background="@color/white"
+                android:text="@string/all_pumps"
+                android:textSize="22sp"
+                android:textColor="@color/DodgerBlue"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"/>
+
+            <ImageView
+                android:contentDescription="Decrement Pulse"
+                android:id="@+id/decrement_pulse"
+                android:scaleType="fitCenter"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_above="@+id/pumps_in_group"
+                android:src="@drawable/minus_icon"
+                android:tint="@color/white"/>
+
+            <ImageView
+                android:contentDescription="Increment Pulse"
+                android:id="@+id/increment_pulse"
+                android:scaleType="fitCenter"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_above="@+id/pumps_in_group"
+                android:src="@android:drawable/ic_input_add"
+                android:tint="@color/white"/>
+
+            <SeekBar
+                android:id="@+id/pulse_time_slider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="50"
+                android:paddingBottom="10dp"
+                android:progressDrawable="@drawable/blue_progress"
+                android:thumb="@drawable/blue_thumb"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@+id/decrement_pulse"
+                android:layout_toLeftOf="@+id/increment_pulse"
+                android:layout_above="@id/pumps_in_group"/>
+
+            <TextView
+                android:id="@+id/pulse_time_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:text="@string/pulse_time"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_above="@+id/pulse_time_slider"
+                android:layout_toRightOf="@id/decrement_pulse"/>
+
+            <TextView
+                android:id="@+id/dynamic_pulse_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1s"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:paddingRight="15dp"
+                android:layout_above="@+id/pulse_time_slider"
+                android:layout_toLeftOf="@id/increment_pulse"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/mode_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mode"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#FF555555"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/pulse_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/constant_speed"
+                    android:textSize="18sp"
+                    android:textColor="#FF333333"
+                    android:layout_below="@+id/mode_header"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ViewFlipper>
+
+    <ViewFlipper
+        android:id="@+id/switcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/kelvin_handler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/circle_slider_kelvin"
+                android:contentDescription="Kelvin Wheel"
+                android:layout_height="345dp"
+                android:layout_width="345dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circle_slider_kelvin_no_labels"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:layout_centerInParent="true"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/rgb_handler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/circle_slider_rgb"
+                android:contentDescription="RGB Wheel"
+                android:layout_height="345dp"
+                android:layout_width="345dp"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/circle_slider_rgb_no_labels"
+                android:scaleType="fitXY"/>
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:id="@+id/uv_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/uv"
+                android:textSize="15dp"
+                android:textColor="@color/White"/>
+
+            <TextView
+                android:id="@+id/uv_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:textSize="15dp"
+                android:textColor="@color/White"
+                android:layout_marginLeft="162dp"/>
+
+            <ImageButton
+                android:contentDescription="Up Button"
+                android:id="@+id/uv_left_up_button"
+                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:src="@drawable/icon_up_arrow"
+                android:layout_below="@+id/uv_label"
+                android:layout_toLeftOf="@+id/uv_left_down_button"
+                android:layout_alignBottom="@+id/uv_left_track" />
+
+            <ImageButton
+                android:contentDescription="Down Button"
+                android:id="@+id/uv_left_down_button"
+                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:src="@drawable/icon_down_arrow"
+                android:layout_below="@+id/uv_label"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/uv_left_track" />
+
+            <SeekBar
+                android:id="@+id/uv_left_track"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/uv_progress"
+                android:layout_below="@id/uv_label"
+                android:thumb="@drawable/blue_thumb"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <TextView
+                android:id="@+id/royal_blue_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/royal_blue"
+                android:textSize="15dp"
+                android:textColor="@color/White"
+                android:layout_below="@+id/uv_left_track"
+                android:layout_alignLeft="@+id/blue_text"/>
+
+            <TextView
+                android:id="@+id/royal_blue_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:textSize="15dp"
+                android:textColor="@color/White"
+                android:layout_below="@+id/uv_left_track"
+                android:layout_marginLeft="162dp" />
+
+            <ImageButton
+                android:contentDescription="Up Button"
+                android:id="@+id/royal_blue_up_button"
+                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:src="@drawable/icon_up_arrow"
+                android:layout_below="@+id/royal_blue_label"
+                android:layout_toLeftOf="@+id/royal_blue_down_button"
+                android:layout_alignBottom="@+id/royal_blue_left_track" />
+
+            <ImageButton
+                android:contentDescription="Down Button"
+                android:id="@+id/royal_blue_down_button"
+                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:src="@drawable/icon_down_arrow"
+                android:layout_below="@+id/royal_blue_label"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/royal_blue_left_track" />
+
+            <SeekBar
+                android:id="@+id/royal_blue_left_track"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/rb_progress"
+                android:layout_below="@+id/royal_blue_label"
+                android:thumb="@drawable/blue_thumb"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <TextView
+                android:id="@+id/blue_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/blue"
+                android:textSize="15dp"
+                android:textColor="@color/White"
+                android:layout_below="@+id/royal_blue_left_track"
+                android:layout_alignLeft="@+id/cool_white_text" />
+
+            <TextView
+                android:id="@+id/blue_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:textSize="15dp"
+                android:textColor="@color/White"
+                android:layout_below="@+id/royal_blue_left_track"
+                android:layout_marginLeft="162dp" />
+
+            <ImageButton
+                android:contentDescription="Up Button"
+                android:id="@+id/blue_up_button"
+                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:src="@drawable/icon_up_arrow"
+                android:layout_below="@+id/blue_label"
+                android:layout_toLeftOf="@+id/blue_down_button"
+                android:layout_alignBottom="@+id/blue_left_track" />
+
+            <ImageButton
+                android:contentDescription="Down Button"
+                android:id="@+id/blue_down_button"
+                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:src="@drawable/icon_down_arrow"
+                android:layout_below="@+id/blue_label"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/blue_left_track" />
+
+            <SeekBar
+                android:id="@+id/blue_left_track"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/blue_progress"
+                android:layout_below="@+id/blue_label"
+                android:thumb="@drawable/blue_thumb"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <TextView
+                android:id="@+id/cool_white_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cool_white"
+                android:textSize="15dp"
+                android:textColor="@color/White"
+                android:layout_below="@+id/blue_left_track"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <TextView
+                android:id="@+id/white_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:textSize="15dp"
+                android:textColor="@color/White"
+                android:layout_below="@+id/blue_left_track"
+                android:layout_marginLeft="162dp" />
+
+            <ImageButton
+                android:contentDescription="Up Button"
+                android:id="@+id/white_up_button"
+                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:src="@drawable/icon_up_arrow"
+                android:layout_below="@+id/white_label"
+                android:layout_toLeftOf="@+id/white_down_button"
+                android:layout_alignBottom="@+id/white_left_track" />
+
+            <ImageButton
+                android:contentDescription="Down Button"
+                android:id="@+id/white_down_button"
+                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:src="@drawable/icon_down_arrow"
+                android:layout_below="@+id/white_label"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/white_left_track" />
+
+            <SeekBar
+                android:id="@+id/white_left_track"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/white_progress"
+                android:layout_below="@id/white_label"
+                android:thumb="@drawable/blue_thumb"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <TextView
+                android:id="@+id/green_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/green"
+                android:textSize="15dp"
+                android:textColor="@color/White"
+                android:layout_below="@+id/white_left_track"
+                android:layout_alignLeft="@+id/cool_white_text" />
+
+            <TextView
+                android:id="@+id/green_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:textSize="15dp"
+                android:textColor="@color/White"
+                android:layout_alignTop="@+id/green_text"
+                android:layout_marginLeft="162dp" />
+
+            <ImageButton
+                android:contentDescription="Up Button"
+                android:id="@+id/green_up_button"
+                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:src="@drawable/icon_up_arrow"
+                android:layout_below="@+id/green_label"
+                android:layout_toLeftOf="@+id/green_down_button"
+                android:layout_alignBottom="@+id/green_left_track" />
+
+            <ImageButton
+                android:contentDescription="Down Button"
+                android:id="@+id/green_down_button"
+                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:src="@drawable/icon_down_arrow"
+                android:layout_below="@+id/green_label"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/green_left_track" />
+
+            <SeekBar
+                android:id="@+id/green_left_track"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/green_progress"
+                android:layout_below="@id/green_label"
+                android:thumb="@drawable/blue_thumb"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <TextView
+                android:id="@+id/red_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/red"
+                android:textSize="15dp"
+                android:textColor="@color/White"
+                android:layout_below="@+id/green_left_track"
+                android:layout_alignLeft="@+id/brightness_text" />
+
+            <TextView
+                android:id="@+id/red_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:textSize="15dp"
+                android:textColor="@color/White"
+                android:layout_alignTop="@+id/red_text"
+                android:layout_marginLeft="162dp" />
+
+            <ImageButton
+                android:contentDescription="Up Button"
+                android:id="@+id/red_up_button"
+                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:src="@drawable/icon_up_arrow"
+                android:layout_below="@+id/red_label"
+                android:layout_toLeftOf="@+id/red_down_button"
+                android:layout_alignBottom="@+id/red_left_track" />
+
+            <ImageButton
+                android:contentDescription="Down Button"
+                android:id="@+id/red_down_button"
+                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:src="@drawable/icon_down_arrow"
+                android:layout_below="@+id/red_label"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/red_left_track" />
+
+            <SeekBar
+                android:id="@+id/red_left_track"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/red_progress"
+                android:layout_below="@id/red_label"
+                android:thumb="@drawable/blue_thumb"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <TextView
+                android:id="@+id/brightness_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/brightness"
+                android:textSize="15dp"
+                android:textColor="@color/White"
+                android:layout_below="@+id/red_left_track"
+                android:layout_alignLeft="@+id/cool_white_text" />
+
+            <TextView
+                android:id="@+id/brightness_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:textSize="15dp"
+                android:textColor="@color/White"
+                android:layout_below="@+id/red_left_track"
+                android:layout_marginLeft="162dp" />
+
+            <ImageButton
+                android:contentDescription="Up Button"
+                android:id="@+id/brightness_up_button"
+                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:src="@drawable/icon_up_arrow"
+                android:layout_below="@+id/brightness_label"
+                android:layout_toLeftOf="@+id/brightness_down_button"
+                android:layout_alignBottom="@+id/brightness_track"/>
+
+            <ImageButton
+                android:contentDescription="Down Button"
+                android:id="@+id/brightness_down_button"
+                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:src="@drawable/icon_down_arrow"
+                android:layout_below="@+id/brightness_label"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/brightness_track"/>
+
+            <SeekBar
+                android:id="@+id/brightness_track"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/bright_progress"
+                android:layout_below="@+id/brightness_label"
+                android:thumb="@drawable/blue_thumb"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+        </RelativeLayout>
+
+    </ViewFlipper>
+
+    <include android:id="@+id/side_main_menu"
+        layout="@layout/main_menu"
+        android:layout_gravity="left"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"/>
+
+    <include android:id="@+id/side_group_list"
+        layout="@layout/group_list"
+        android:layout_gravity="right"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"/>
+
+</android.support.v4.widget.DrawerLayout>

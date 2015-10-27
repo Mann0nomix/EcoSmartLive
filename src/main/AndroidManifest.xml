@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ecotechmarine.ecosmartlive_android"
+    android:versionCode="16"
+    android:versionName="Beta 1.2" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ecosmartlive_icon"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.noActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NavigationWheel"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/aquarium"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SavePresetView"
+            android:label="@string/title_activity_save_preset_view"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysVisible" />
+        <activity
+            android:name=".ScheduleParamsView"
+            android:label="@string/title_activity_schedule_params_view_controller"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".WarningView"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.noActionBar" />
+        <activity
+            android:name=".LoginView"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.noActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".Overlay"
+            android:label="@string/title_activity_overlay"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".ProgramSchedule"
+            android:label="@string/title_activity_program_schedule"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".SettingsOverlay"
+            android:label="@string/title_activity_settings_overlay"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".ScheduleTemplateMenu"
+            android:label="@string/title_activity_schedule_template_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".ScheduleNavigationOverlay"
+            android:label="@string/title_activity_schedule_navigation_menu"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".SchedulePointView"
+            android:label="@string/title_activity_schedule_point_view"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".SaveNewAquarium"
+            android:label="@string/title_activity_save_new_aquarium"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".ScheduleGraphView"
+            android:label="@string/title_activity_schedule_graph_view"
+            android:launchMode="singleInstance"
+            android:screenOrientation="sensor"
+            android:theme="@style/AppTheme.noActionBar" >
+        </activity>
+        <activity
+            android:name=".PresetSelection"
+            android:label="@string/title_activity_preset_selection"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".ColorSelection"
+            android:label="@string/title_activity_color_selection"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".TransparentOverlay"
+            android:label="@string/title_activity_transparent_overlay"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".RefreshOverlay"
+            android:label="@string/title_activity_default_overlay"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".NewAquariumList"
+            android:label="@string/title_activity_new_aquarium_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".AquariumProgramOverlay"
+            android:label="@string/title_activity_aquarium_search_overlay"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".LegacyRadion"
+            android:label="@string/title_activity_legacy_radion_view"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".LegacyVortech"
+            android:label="@string/title_activity_legacy_vortech_view"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".LegacyMenuOverlay"
+            android:label="@string/title_activity_legacy_menu_overlay"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".VortechUpdateOverlay"
+            android:label="@string/title_activity_vortech_update_overlay"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".RadionUpdateOverlay"
+            android:label="@string/title_activity_radion_update_overlay"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".PulseInfoOverlay"
+            android:label="@string/title_activity_pulse_info_overlay"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".PumpSelectionList"
+            android:label="@string/title_activity_pump_selection_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".DeviceManagerList"
+            android:label="@string/title_activity_device_manager_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".DeviceDetailsList"
+            android:label="@string/title_activity_device_details_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".DeviceManagerOverlay"
+            android:label="@string/title_activity_device_manager_overlay"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        </activity>
+        <activity
+            android:name=".DeviceDetailsOverlay"
+            android:label="@string/title_activity_device_details_overlay"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        </activity>
+    </application>
+
+</manifest>

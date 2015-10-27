@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingTop="20dp"
+    tools:context="com.ecotechmarine.ecosmartlive_android.LegacyRadion">
+
+    <TextView
+        android:id="@+id/add_light_text"
+        android:text="@string/add_light_via_usb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:paddingLeft="20dp"
+        android:paddingTop="40dp"/>
+
+    <ImageView
+        android:id="@+id/radion_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_radion"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:layout_alignParentRight="true"
+        android:tint="@color/silver"/>
+
+    <TextView
+        android:id="@+id/plug_in_USB"
+        android:text="@string/plug_usb_cable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_light_text"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="40dp"/>
+
+    <ProgressBar
+        android:id="@+id/radion_device_connection_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/wait_for_connection"
+        android:layout_below="@id/radion_device_connection_progress"
+        android:text="@string/waiting_for_device_connection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/serial_number_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/serial_number"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/plug_in_USB"
+        android:paddingLeft="20dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/serial_number_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0111111111"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/plug_in_USB"
+        android:paddingRight="18dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/model_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/model"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/serial_number_title"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/model_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/RadionXR30w"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/serial_number_data"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/identify_icon"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_locate_active"
+        android:layout_below="@+id/model_title"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:layout_marginTop="40dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- These keys are matched up to the values in the iPhone app -->
+    <string name="all_groups">すべての水槽</string>
+    <string name="color_channels">カラーチャンネル</string>
+    <string name="presets">カラーセット</string>
+    <string name="preview_modes">プレビュー</string>
+    <string name="schedule">スケジュール</string>
+    <string name="sign_out">サインアウト</string>
+    <string name="empty_profile">アカウント情報が確認出来ません</string>
+    <string name="info_empty_profile">再試行してください。</string>
+    <string name="warning_not_connect">EcoSmart Liveに接続できません</string>
+    <string name="warning_not_connect2">後ほど再試行してください</string>
+    <string name="warning_no_internet">Radionと接続できません</string>
+    <string name="warning_no_internet2">接続を確認して下さい</string>
+    <string name="login">ログイン</string>
+    <string name="invalid_login_title">ログインに失敗しました</string>
+    <string name="invalid_login">メールアドレスとパスワードに誤りがないかを確認してください</string>
+    <string name="username_entry">メールアドレス</string>
+    <string name="password_entry">パスワード</string>
+    <string name="connecting_to_esl">EcoSmart Liveに接続中</string>
+    <string name="save_preset">カラーセットの保存</string>
+    <string name="saved">保存終了</string>
+    <string name="kelvin">ケルビン</string>
+    <string name="rgb">RGB</string>
+    <string name="slider">スライダ</string>
+    <string name="uv">UV</string>
+    <string name="royal_blue">Royal Blue</string>
+    <string name="blue">Blue</string>
+    <string name="cool_white">Cool White</string>
+    <string name="green">Green</string>
+    <string name="red">Red</string>
+    <string name="brightness">照度</string>
+    <string name="enter_preset_name">カラーセット名を入力</string>
+    <string name="cancel">キャンセル</string>
+    <string name="save">保存</string>
+    <string name="forgot_preset_name">有効なカラーセット名を入力してください</string>
+    <string name="ok">OK</string>
+    <string name="default_presets">初期カラーセット</string>
+    <string name="my_presets">マイ カラーセット</string>
+    <string name="thunderstorms">サンダーストーム</string>
+    <string name="demonstration">デモンストレーション</string>
+    <string name="cloud_cover">クラウド</string>
+    <string name="disco_time">ディスコモード</string>
+    <string name="high_growth">ハイグロウ</string>
+    <string name="high_growth_description">&lt;span style=\'font-family:HelveticaNeue;color:black;background-color:rgba(0,0,0,0);font-size:16px;text-align:justify;text-wrap:normal;word-wrap:break-word\'><![CDATA[&#12487;]]><![CDATA[&#12452;]]><![CDATA[&#12479;]]><![CDATA[&#12452;]]><![CDATA[&#12512;]]><![CDATA[&#12395;]]><![CDATA[&#12394;]]><![CDATA[&#12427;]]><![CDATA[&#12392;]]><![CDATA[&#12289;]]><![CDATA[&#12414;]]><![CDATA[&#12378;]]>Blue<![CDATA[&#12364;]]><![CDATA[&#28857;]]><![CDATA[&#28783;]]><![CDATA[&#12375;]]><![CDATA[&#12390;]]><![CDATA[&#27700;]]><![CDATA[&#27133;]]><![CDATA[&#12434;]]><![CDATA[&#24425;]]><![CDATA[&#12426;]]><![CDATA[&#12414;]]><![CDATA[&#12377;]]><![CDATA[&#12290;]]><![CDATA[&#12381;]]><![CDATA[&#12398;]]><![CDATA[&#24460;]]><![CDATA[&#30701;]]><![CDATA[&#26178;]]><![CDATA[&#38291;]]><![CDATA[&#12391;]]><![CDATA[&#20986;]]><![CDATA[&#21147;]]><![CDATA[&#12364;]]><![CDATA[&#19978;]]><![CDATA[&#12364;]]><![CDATA[&#12426;]]><![CDATA[&#12289;]]><![CDATA[&#39640;]]><![CDATA[&#12356;]]><![CDATA[&#20986;]]><![CDATA[&#21147;]]><![CDATA[&#12434;]]><![CDATA[&#32173;]]><![CDATA[&#25345;]]><![CDATA[&#12375;]]><![CDATA[&#12383;]]><![CDATA[&#12414;]]><![CDATA[&#12414;]]><![CDATA[&#27700;]]><![CDATA[&#27133;]]><![CDATA[&#12434;]]><![CDATA[&#29031;]]><![CDATA[&#12425;]]><![CDATA[&#12375;]]><![CDATA[&#32154;]]><![CDATA[&#12369;]]><![CDATA[&#12414;]]><![CDATA[&#12377;]]><![CDATA[&#12290;]]><![CDATA[&#12490;]]><![CDATA[&#12452;]]><![CDATA[&#12488;]]><![CDATA[&#12479;]]><![CDATA[&#12452;]]><![CDATA[&#12512;]]><![CDATA[&#12364;]]><![CDATA[&#36817;]]><![CDATA[&#12389;]]><![CDATA[&#12367;]]><![CDATA[&#12392;]]><![CDATA[&#30701;]]><![CDATA[&#26178;]]><![CDATA[&#38291;]]><![CDATA[&#12391;]]><![CDATA[&#20986;]]><![CDATA[&#21147;]]><![CDATA[&#12364;]]><![CDATA[&#33853;]]><![CDATA[&#12385;]]><![CDATA[&#12289;]]>Blue<![CDATA[&#12398;]]><![CDATA[&#26126;]]><![CDATA[&#12363;]]><![CDATA[&#12426;]]><![CDATA[&#12391;]]><![CDATA[&#12512;]]><![CDATA[&#12540;]]><![CDATA[&#12531;]]><![CDATA[&#12521;]]><![CDATA[&#12452;]]><![CDATA[&#12488;]]><![CDATA[&#12434;]]><![CDATA[&#28436;]]><![CDATA[&#20986;]]><![CDATA[&#12375;]]><![CDATA[&#12390;]]><![CDATA[&#12356;]]><![CDATA[&#12365;]]><![CDATA[&#12414;]]><![CDATA[&#12377;]]><![CDATA[&#12290;]]>&lt;/span></string>
+    <string name="radiant_color">ラディアントカラー</string>
+    <string name="radiant_color_description">&lt;span style=\'font-family:HelveticaNeue;color:black;background-color:rgba(0,0,0,0);font-size:15px;text-align:justify;text-wrap:normal;word-wrap:break-word\'><![CDATA[&#39770;]]><![CDATA[&#12420;]]><![CDATA[&#12469;]]><![CDATA[&#12531;]]><![CDATA[&#12468;]]><![CDATA[&#12398;]]><![CDATA[&#12424;]]><![CDATA[&#12358;]]><![CDATA[&#12394;]]><![CDATA[&#28961;]]><![CDATA[&#33034;]]><![CDATA[&#26894;]]><![CDATA[&#21205;]]><![CDATA[&#29289;]]><![CDATA[&#12434;]]><![CDATA[&#32654;]]><![CDATA[&#12375;]]><![CDATA[&#12367;]]><![CDATA[&#39749;]]><![CDATA[&#12379;]]><![CDATA[&#12427;]]><![CDATA[&#12383;]]><![CDATA[&#12417;]]><![CDATA[&#12395;]]><![CDATA[&#32771;]]><![CDATA[&#26696;]]><![CDATA[&#12373;]]><![CDATA[&#12428;]]><![CDATA[&#12390;]]><![CDATA[&#12362;]]><![CDATA[&#12426;]]><![CDATA[&#12289;]]><![CDATA[&#34509;]]><![CDATA[&#20809;]]><![CDATA[&#33394;]]><![CDATA[&#12434;]]><![CDATA[&#26368;]]><![CDATA[&#22823;]]><![CDATA[&#38480;]]><![CDATA[&#12395;]]><![CDATA[&#24341;]]><![CDATA[&#12365;]]><![CDATA[&#31435;]]><![CDATA[&#12390;]]><![CDATA[&#12414;]]><![CDATA[&#12377;]]><![CDATA[&#12290;]]>DeepBlue<![CDATA[&#12363;]]><![CDATA[&#12425;]]><![CDATA[&#24464;]]><![CDATA[&#12293;]]><![CDATA[&#12395;]]><![CDATA[&#12501;]]><![CDATA[&#12523;]]><![CDATA[&#12459;]]><![CDATA[&#12521;]]><![CDATA[&#12540;]]><![CDATA[&#12408;]]><![CDATA[&#12392;]]><![CDATA[&#31227;]]><![CDATA[&#34892;]]><![CDATA[&#12377;]]><![CDATA[&#12427;]]><![CDATA[&#20809;]]><![CDATA[&#12398;]]><![CDATA[&#22793;]]><![CDATA[&#21270;]]><![CDATA[&#12434;]]><![CDATA[&#27005;]]><![CDATA[&#12375;]]><![CDATA[&#12416;]]><![CDATA[&#12371;]]><![CDATA[&#12392;]]><![CDATA[&#12364;]]><![CDATA[&#20986;]]><![CDATA[&#26469;]]><![CDATA[&#12414;]]><![CDATA[&#12377;]]><![CDATA[&#12290;]]><![CDATA[&#12420;]]><![CDATA[&#12364;]]><![CDATA[&#12390;]]><![CDATA[&#20877;]]><![CDATA[&#12403;]]>DeepBlue<![CDATA[&#19968;]]><![CDATA[&#33394;]]><![CDATA[&#12392;]]><![CDATA[&#12394;]]><![CDATA[&#12426;]]><![CDATA[&#12289;]]><![CDATA[&#65298;]]><![CDATA[&#26178;]]><![CDATA[&#38291;]]><![CDATA[&#12512;]]><![CDATA[&#12540;]]><![CDATA[&#12531;]]><![CDATA[&#12521;]]><![CDATA[&#12452;]]><![CDATA[&#12488;]]><![CDATA[&#12364;]]><![CDATA[&#28857;]]><![CDATA[&#28783;]]><![CDATA[&#12375;]]><![CDATA[&#12383;]]><![CDATA[&#24460;]]><![CDATA[&#12289;]]><![CDATA[&#28040;]]><![CDATA[&#28783;]]><![CDATA[&#12375;]]><![CDATA[&#12414;]]><![CDATA[&#12377;]]><![CDATA[&#12290;]]>&lt;/span></string>
+    <string name="traditional_reef">トラディショナルリーフ</string>
+    <string name="traditional_reef_description">&lt;span style=\'font-family:HelveticaNeue;color:black;background-color:rgba(0,0,0,0);font-size:16px;text-align:justify;text-wrap:normal;word-wrap:break-word\'><![CDATA[&#24467;]]><![CDATA[&#26469;]]><![CDATA[&#27700;]]><![CDATA[&#27133;]]><![CDATA[&#29992;]]><![CDATA[&#12392;]]><![CDATA[&#12375;]]><![CDATA[&#12390;]]><![CDATA[&#20316;]]><![CDATA[&#12425;]]><![CDATA[&#12428;]]><![CDATA[&#12390;]]><![CDATA[&#12365;]]><![CDATA[&#12383;]]><![CDATA[&#22810;]]><![CDATA[&#12367;]]><![CDATA[&#12398;]]><![CDATA[&#29031;]]><![CDATA[&#26126;]]><![CDATA[&#22120;]]><![CDATA[&#20855;]]><![CDATA[&#12391;]]><![CDATA[&#35373;]]><![CDATA[&#23450;]]><![CDATA[&#12391;]]><![CDATA[&#12365;]]><![CDATA[&#12427;]]><![CDATA[&#12424;]]><![CDATA[&#12394;]]><![CDATA[&#12473;]]><![CDATA[&#12465;]]><![CDATA[&#12472;]]><![CDATA[&#12517;]]><![CDATA[&#12540;]]><![CDATA[&#12523;]]><![CDATA[&#12434;]]><![CDATA[&#20877;]]><![CDATA[&#29694;]]><![CDATA[&#12375;]]><![CDATA[&#12390;]]><![CDATA[&#12356;]]><![CDATA[&#12414;]]><![CDATA[&#12377;]]><![CDATA[&#12290;]]>Blue<![CDATA[&#21336;]]><![CDATA[&#33394;]]><![CDATA[&#12363;]]><![CDATA[&#12425;]]><![CDATA[&#12289;]]>12000<![CDATA[&#12465;]]><![CDATA[&#12523;]]><![CDATA[&#12499;]]><![CDATA[&#12531;]]><![CDATA[&#12398;]]><![CDATA[&#20809;]]><![CDATA[&#12414;]]><![CDATA[&#12391;]]><![CDATA[&#27573;]]><![CDATA[&#38542;]]><![CDATA[&#30340;]]><![CDATA[&#12395;]]><![CDATA[&#22793;]]><![CDATA[&#21270;]]><![CDATA[&#12375;]]><![CDATA[&#12414;]]><![CDATA[&#12377;]]><![CDATA[&#12290;]]><![CDATA[&#12490;]]><![CDATA[&#12452;]]><![CDATA[&#12488;]]><![CDATA[&#12479;]]><![CDATA[&#12452;]]><![CDATA[&#12512;]]><![CDATA[&#12395;]]><![CDATA[&#12394;]]><![CDATA[&#12427;]]><![CDATA[&#12392;]]>3<![CDATA[&#26178;]]><![CDATA[&#38291;]]><![CDATA[&#12512;]]><![CDATA[&#12540;]]><![CDATA[&#12531;]]><![CDATA[&#12521;]]><![CDATA[&#12452;]]><![CDATA[&#12488;]]><![CDATA[&#12364;]]><![CDATA[&#28857;]]><![CDATA[&#28783;]]><![CDATA[&#12375;]]><![CDATA[&#12414;]]><![CDATA[&#12377;]]><![CDATA[&#12290;]]>&lt;/span></string>
+    <string name="fresh_aquarium">フレッシュプランツ</string>
+    <string name="fresh_planted_description">&lt;span style=\'font-family:HelveticaNeue;color:black;background-color:rgba(0,0,0,0);font-size:16px;text-align:justify;text-wrap:normal;word-wrap:break-word\'><![CDATA[&#12371;]]><![CDATA[&#12398;]]><![CDATA[&#12486;]]><![CDATA[&#12531;]]><![CDATA[&#12503;]]><![CDATA[&#12524;]]><![CDATA[&#12540;]]><![CDATA[&#12488;]]><![CDATA[&#12399;]]><![CDATA[&#28201;]]><![CDATA[&#26262;]]><![CDATA[&#22320;]]><![CDATA[&#22495;]]><![CDATA[&#12398;]]><![CDATA[&#28129;]]><![CDATA[&#27700;]]><![CDATA[&#27700;]]><![CDATA[&#33609;]]><![CDATA[&#29992;]]><![CDATA[&#12395;]]><![CDATA[&#35519;]]><![CDATA[&#25972;]]><![CDATA[&#12373;]]><![CDATA[&#12428;]]><![CDATA[&#12390;]]><![CDATA[&#12356;]]><![CDATA[&#12414;]]><![CDATA[&#12377;]]><![CDATA[&#12290;]]>5000<![CDATA[&#12465;]]><![CDATA[&#12523;]]><![CDATA[&#12499;]]><![CDATA[&#12531;]]><![CDATA[&#12392;]]>7000<![CDATA[&#12465;]]><![CDATA[&#12523;]]><![CDATA[&#12499;]]><![CDATA[&#12531;]]><![CDATA[&#12398;]]><![CDATA[&#26126;]]><![CDATA[&#12363;]]><![CDATA[&#12426;]]><![CDATA[&#12434;]]><![CDATA[&#22522;]]><![CDATA[&#26412;]]><![CDATA[&#12392;]]><![CDATA[&#12375;]]><![CDATA[&#12390;]]><![CDATA[&#12356;]]><![CDATA[&#12414;]]><![CDATA[&#12377;]]><![CDATA[&#12290;]]>&lt;/span></string>
+    <string name="shallow_reef">浅場のサンゴ礁（ナチュラルモード)</string>
+    <string name="shallow_reef_description">&lt;span style=\'font-family:HelveticaNeue;color:black;background-color:rgba(0,0,0,0);font-size:16px;text-align:justify;text-wrap:normal;word-wrap:break-word\'><![CDATA[&#12371;]]><![CDATA[&#12398;]]><![CDATA[&#12486;]]><![CDATA[&#12531;]]><![CDATA[&#12503;]]><![CDATA[&#12524;]]><![CDATA[&#12540;]]><![CDATA[&#12488;]]><![CDATA[&#12399;]]><![CDATA[&#12289;]]><![CDATA[&#12510;]]><![CDATA[&#12524;]]><![CDATA[&#12540;]]><![CDATA[&#12471;]]><![CDATA[&#12450;]]><![CDATA[&#12398;]]>&lt;a href=\'http://en.wikipedia.org/wiki/Sipadan\' target=\'_blank\'><![CDATA[&#12471;]]><![CDATA[&#12497;]]><![CDATA[&#12480;]]><![CDATA[&#12531;]]><![CDATA[&#23798;]]>&lt;/a><![CDATA[&#20184;]]><![CDATA[&#36817;]]><![CDATA[&#12398;]]><![CDATA[&#19968;]]><![CDATA[&#26085;]]><![CDATA[&#12398;]]><![CDATA[&#22826;]]><![CDATA[&#38525;]]><![CDATA[&#20809;]]><![CDATA[&#12473;]]><![CDATA[&#12506;]]><![CDATA[&#12463;]]><![CDATA[&#12488;]]><![CDATA[&#12523;]]><![CDATA[&#12395;]]><![CDATA[&#22522;]]><![CDATA[&#12356;]]><![CDATA[&#12390;]]><![CDATA[&#12356;]]><![CDATA[&#12414;]]><![CDATA[&#12377;]]><![CDATA[&#12290;]]><![CDATA[&#12371;]]><![CDATA[&#12398;]]><![CDATA[&#12487;]]><![CDATA[&#12540;]]><![CDATA[&#12479;]]><![CDATA[&#12399;]]><![CDATA[&#23798;]]><![CDATA[&#12395;]]><![CDATA[&#12411;]]><![CDATA[&#12393;]]><![CDATA[&#36817;]]><![CDATA[&#12356;]]><![CDATA[&#28023;]]><![CDATA[&#19978;]]><![CDATA[&#12391;]]><![CDATA[&#23455;]]><![CDATA[&#38555;]]><![CDATA[&#12395;]]><![CDATA[&#26085;]]><![CDATA[&#12398;]]><![CDATA[&#20986;]]><![CDATA[&#12363;]]><![CDATA[&#12425;]]><![CDATA[&#26085;]]><![CDATA[&#27809;]]><![CDATA[&#12414;]]><![CDATA[&#12391;]]><![CDATA[&#28204;]]><![CDATA[&#23450;]]><![CDATA[&#12373;]]><![CDATA[&#12428;]]><![CDATA[&#12383;]]><![CDATA[&#12418;]]><![CDATA[&#12398;]]><![CDATA[&#12391;]]><![CDATA[&#12289;]]><![CDATA[&#27700;]]><![CDATA[&#27133;]]><![CDATA[&#12395;]]><![CDATA[&#21335;]]><![CDATA[&#22269;]]><![CDATA[&#12398;]]><![CDATA[&#26085;]]><![CDATA[&#20809;]]><![CDATA[&#12434;]]><![CDATA[&#20877;]]><![CDATA[&#29694;]]><![CDATA[&#12375;]]><![CDATA[&#12414;]]><![CDATA[&#12377;]]><![CDATA[&#12290;]]><![CDATA[&#12512;]]><![CDATA[&#12540;]]><![CDATA[&#12531;]]><![CDATA[&#12521;]]><![CDATA[&#12452;]]><![CDATA[&#12488;]]><![CDATA[&#12399;]]><![CDATA[&#35373;]]><![CDATA[&#23450;]]><![CDATA[&#12373;]]><![CDATA[&#12428;]]><![CDATA[&#12390;]]><![CDATA[&#12356;]]><![CDATA[&#12414;]]><![CDATA[&#12379;]]><![CDATA[&#12435;]]><![CDATA[&#12290;]]>&lt;/span></string>
+    <string name="deep_water_reef">深場のサンゴ礁（ナチュラルモード）</string>
+    <string name="deep_water_reef_description">&lt;span style=\'font-family:HelveticaNeue;color:black;background-color:rgba(0,0,0,0);font-size:16px;text-align:justify;text-wrap:normal;word-wrap:break-word\'><![CDATA[&#27973;]]><![CDATA[&#32701;]]><![CDATA[&#12398;]]><![CDATA[&#12469;]]><![CDATA[&#12531;]]><![CDATA[&#12468;]]><![CDATA[&#30977;]]><![CDATA[&#12398;]]><![CDATA[&#12487;]]><![CDATA[&#12540;]]><![CDATA[&#12479;]]><![CDATA[&#12434;]]><![CDATA[&#22522;]]><![CDATA[&#12395;]]><![CDATA[&#12289;]]><![CDATA[&#27700;]]><![CDATA[&#28145;]]><![CDATA[&#12364;]]><![CDATA[&#28145;]]><![CDATA[&#12367;]]><![CDATA[&#12394;]]><![CDATA[&#12427;]]><![CDATA[&#12371;]]><![CDATA[&#12392;]]><![CDATA[&#12395;]]><![CDATA[&#12424;]]><![CDATA[&#12387;]]><![CDATA[&#12390;]]><![CDATA[&#24375;]]><![CDATA[&#12415;]]><![CDATA[&#12364;]]><![CDATA[&#22679;]]><![CDATA[&#12377;]]>Blue<![CDATA[&#12398;]]><![CDATA[&#26126;]]><![CDATA[&#12363;]]><![CDATA[&#12426;]]><![CDATA[&#12434;]]><![CDATA[&#33258;]]><![CDATA[&#28982;]]><![CDATA[&#12395;]]><![CDATA[&#20877;]]><![CDATA[&#29694;]]><![CDATA[&#12375;]]><![CDATA[&#12390;]]><![CDATA[&#12356;]]><![CDATA[&#12414;]]><![CDATA[&#12377;]]><![CDATA[&#12290;]]><![CDATA[&#12512;]]><![CDATA[&#12540;]]><![CDATA[&#12531;]]><![CDATA[&#12521;]]><![CDATA[&#12452;]]><![CDATA[&#12488;]]><![CDATA[&#12399;]]><![CDATA[&#35373;]]><![CDATA[&#23450;]]><![CDATA[&#12373;]]><![CDATA[&#12428;]]><![CDATA[&#12390;]]><![CDATA[&#12356;]]><![CDATA[&#12414;]]><![CDATA[&#12379;]]><![CDATA[&#12435;]]><![CDATA[&#12290;]]>&lt;/span></string>
+    <string name="choose_template">テンプレート選択</string>
+    <string name="done">続行</string>
+    <string name="saving_schedule">スケジュールの保存中</string>
+    <string name="resetting_radions">Radionの再起動中</string>
+    <string name="error_programming">保存中にエラーが発生しました。再試行してください</string>
+    <string name="programming_complete_on">Radion 保存完了</string>
+    <string name="radions_programmed">Radionへの保存を完了しました</string>
+    <string name="new_schedule">新しいスケジュール</string>
+    <string name="start_day">スタート Day</string>
+    <string name="start_night">スタート Night</string>
+    <string name="daytime_intensity">点灯中の照度</string>
+    <string name="wrong_start_time_msg">スタート DayとNightは１時間以上間隔を開けて下さい</string>
+    <string name="wrong_start_time_title">設定に問題があります</string>
+    <string name="error_programming_title">Radionへの保存中のエラー</string>
+    <string name="scheduling_successful_title">スケジュール保存完了</string>
+    <string name="delete_preset_msg">このカラーセットを本当に消去しますか？</string>
+    <string name="deleted">消去終了</string>
+    <string name="deletion">消去</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="indigo">Indigo</string>
+    <string name="violet">Violet</string>
+    <string name="orange">Orange</string>
+    <string name="yellow">Yellow</string>
+    <string name="dropcam">Dropcam</string>
+
+    <!-- 1.1 Group Settings Strings -->
+    <string name="settings">Settings</string>
+    <string name="aquariums">My Aquariums</string>
+    <string name="aquarium_name">Aquarium name</string>
+    <string name="next">Next</string>
+    <string name="name_your_aquarium">Name your new aquarium</string>
+    <string name="retry">Retry</string>
+    <string name="searching_for_radions">Searching for Radions</string>
+    <string name="assigning_radions">Assigning Radions…</string>
+    <string name="save_group_setting">Saving group setting…</string>
+    <string name="ecosmart_participation">EcoSMART Participation</string>
+    <string name="override_timer">Override Timer</string>
+    <string name="acclimate_timer">Acclimate Timer</string>
+    <string name="lunar_phases">Lunar Phases</string>
+    <string name="override_length_for_radions">Change the length of time you can override your Radion\'s program using the buttons.</string>
+    <string name="override_time">Override Time (hours):</string>
+    <string name="acclimation_and_intensity">Set the acclimation period and starting intensity.</string>
+    <string name="acclimation_period">Acclimation Period (weeks):</string>
+    <string name="starting_intensity">Starting Intensity:</string>
+    <string name="lunar_phase_explanation">Lunar phases enable the Radions in the group to adjust their brightness of nighttime points, simulating a lunar cycle. The brightness is computed using the calendar date. If no nighttime points exist, lunar phases will have no effect.</string>
+    <string name="light_night_mode">When enabled, lights will put pumps into night mode.</string>
+
+    <!-- 1.1 Schedule View Strings -->
+    <string name="program">Program</string>
+    <string name="load_template">Load from Template…</string>
+    <string name="apply_overall_brightness">Applying overall brightness…</string>
+    <string name="apply_depth_offset">Applying depth offset…</string>
+    <string name="apply_overall_storm_probability">Applying overall storm probability…</string>
+    <string name="apply_overall_cloud_probability">Applying overall cloud probability…</string>
+    <string name="natural_mode_options">Natural Mode Options</string>
+    <string name="weather">Weather</string>
+    <string name="artificial_mode_options">Artificial Mode Options</string>
+    <string name="points">Points</string>
+    <string name="storm_probability">Storm Probability</string>
+    <string name="cloud_probability">Cloud Probability</string>
+    <string name="back">Back</string>
+    <string name="custom">Custom</string>
+    <string name="off">Off</string>
+    <string name="individual_colors">Individual Colors</string>
+    <string name="new_point">New Point</string>
+    <string name="edit_point">Edit Point</string>
+    <string name="enter_valid_start_time">Please enter a valid start time</string>
+    <string name="colors">Colors</string>
+    <string name="point_time">Point Time</string>
+    <string name="preset">Preset</string>
+    <string name="overall_brightness">Overall Brightness</string>
+    <string name="depth_offset">Depth Offset</string>
+    <string name="cloudy">Cloudy</string>
+    <string name="clear">Clear</string>
+    <string name="now">Now</string>
+    <string name="refreshing_schedule">Refreshing…</string>
+    <string name="loading">Loading…</string>
+    <string name="loading_complete">Loading Complete</string>
+    <string name="schedule_tooltip">Hold a point and slide to scroll.\nAdd Point: Click + at bottom.\nEdit Point: Tap highlighted point.\nDelete Point: Hold highlighted point.</string>
+    <string name="delete_data_point">Are you sure you want to delete this point?</string>
+    <string name="point">Point</string>
+    <string name="time">Time</string>
+    <string name="color">Color</string>
+
+    <!-- 1.1 New Aquarium Wizard -->
+    <string name="new_aquarium">New Aquarium</string>
+    <string name="device">Device</string>
+    <string name="new_devices">New Devices</string>
+    <string name="missing_devices">Missing Devices?</string>
+    <string name="device_type_missing">What type of device are you missing?</string>
+    <string name="select_all">Select All</string>
+    <string name="deselect_all">Deselect All</string>
+    <string name="searching_for_devices">Searching for Devices…</string>
+    <string name="addressing_devices">Addressing Devices…</string>
+    <string name="serial">Serial</string>
+    <string name="RadionXR30w">Radion XR30w</string>
+    <string name="RadionXR30wG2">Radion XR30w G2</string>
+    <string name="RadionXR30wPro">Radion XR30w Pro</string>
+    <string name="RadionXR30wG3">Radion XR30w G3</string>
+    <string name="RadionXR30wG3Pro">Radion XR30w G3 Pro</string>
+    <string name="RadionXR30wProto">Radion XR30w Pro</string>
+    <string name="no_device_selected">No Device Selected</string>
+    <string name="must_select_device">You must select a device in order to assign it to this group</string>
+    <string name="aquarium_wizard_tip">Tap a device to place them into your new group!</string>
+    <string name="no_devices_found">We could not find any devices. Please try again.</string>
+
+    <!-- Strings that do not need to be translated -->
+    <string name="app_name">EcoSmart Live</string>
+    <string name="aquarium">My Aquarium</string>
+    <string name="action_settings">Settings</string>
+    <string name="open_drawer">Open Navigation Drawer</string>
+    <string name="close_drawer">Close navigation Drawer</string>
+    <string name="circle_slider_kelvin">Slider to control blue tints</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="title_activity_overlay">Overlay</string>
+    <string name="title_activity_program_schedule">Program Schedule</string>
+    <string name="title_activity_main_menu">Main Menu</string>
+    <string name="title_activity_group_list">Group List</string>
+    <string name="title_activity_colors_view">Colors</string>
+    <string name="title_activity_save_preset_view">Save Preset</string>
+    <string name="title_activity_preview_mode_view">Preview Modes</string>
+    <string name="title_activity_preset_view">Default Presets</string>
+    <string name="title_activity_default_schedule_selector_view">Default Schedule</string>
+    <string name="title_activity_schedule_preview_view_controller">Schedule Preview</string>
+    <string name="title_activity_schedule_params_view_controller">Schedule Parameters</string>
+    <string name="title_activity_sliders_view">SlidersView</string>
+    <string name="title_activity_warning_view">WarningView</string>
+    <string name="title_activity_settings_view">SettingsView</string>
+    <string name="hello_world">Hello World!</string>
+
+    <string-array name="menu_presets">
+        <item>@string/color_channels</item>
+        <item>@string/presets</item>
+        <item>@string/preview_modes</item>
+        <item>@string/schedule</item>
+        <item>@string/settings</item>
+        <item>@string/dropcam</item>
+    </string-array>
+    <string-array name="previewsList">
+        <item>@string/thunderstorms</item>
+        <item>@string/demonstration</item>
+        <item>@string/cloud_cover</item>
+        <item>@string/disco_time</item>
+    </string-array>
+    <string-array name="schedList">
+        <item>@string/high_growth</item>
+        <item>@string/start_day</item>
+        <item>@string/start_night</item>
+    </string-array>
+    <string-array name="schedTitle">
+        <item>@string/high_growth</item>
+        <item>@string/radiant_color</item>
+        <item>@string/traditional_reef</item>
+        <item>@string/fresh_aquarium</item>
+        <item>@string/shallow_reef</item>
+        <item>@string/deep_water_reef</item>
+    </string-array>
+    <string-array name="settings_array">
+        <item>@string/override_timer</item>
+        <item>@string/acclimate_timer</item>
+        <item>@string/lunar_phases</item>
+    </string-array>
+    <string-array name="point_view_headers">
+        <item>@string/time</item>
+        <item>@string/colors</item>
+        <item>@string/weather</item>
+    </string-array>
+
+    <string name="title_activity_settings_overlay">SettingsOverlay</string>
+    <string name="title_activity_schedule_template_menu">ScheduleTemplateMenu</string>
+    <string name="title_activity_schedule_navigation_menu">ScheduleNavigationMenu</string>
+    <string name="title_activity_schedule_point_view">SchedulePointView</string>
+    <string name="title_activity_save_new_aquarium">SaveNewAquarium</string>
+    <string name="title_activity_schedule_graph_view">ScheduleGraphView</string>
+    <string name="title_activity_preset_selection">PresetSelection</string>
+    <string name="title_activity_color_selection">ColorSelection</string>
+    <string name="title_activity_transparent_overlay">TransparentOverlay</string>
+    <string name="title_activity_default_overlay">DefaultOverlay</string>
+    <string name="title_activity_new_aquarium_list">NewAquariumList</string>
+    <string name="title_activity_add_radion_view">AddRadionView</string>
+    <string name="title_activity_aquarium_search_overlay">AquariumSearchOverlay</string>
+
+</resources>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- These keys are matched up to the values in the iPhone app -->
+    <string name="all_groups">Todos los acuarios</string>
+    <string name="color_channels">Canales de color</string>
+    <string name="presets">Ajustes</string>
+    <string name="preview_modes">Modos de previsualización</string>
+    <string name="schedule">Programa</string>
+    <string name="sign_out">Cerrar sesión</string>
+    <string name="empty_profile">Su perfil EcoSmart Live está vacio</string>
+    <string name="info_empty_profile">(añada algunas Radions y vuelva a intentar)</string>
+    <string name="warning_not_connect">No se ha podido conectar a EcoSmart Live</string>
+    <string name="warning_not_connect2">(por favor, inténtelo más tarde)</string>
+    <string name="warning_no_internet">No se ha podido conectar con sus Radions</string>
+    <string name="warning_no_internet2">(por favor, compruebe su conexión)</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="invalid_login_title">Inicio incorrecto</string>
+    <string name="invalid_login">El correo electrónico o su contraseña son incorrectos. Por favor, vuelva a intentarlo.</string>
+    <string name="username_entry">Correo Electrónico\.\.\.</string>
+    <string name="password_entry">Contraseña\.\.\.</string>
+    <string name="connecting_to_esl">Conectando a EcoSmart Live\.\.\.</string>
+    <string name="save_preset">Guardar ajustes</string>
+    <string name="saved">guardado.</string>
+    <string name="kelvin">Kelvin</string>
+    <string name="rgb">RGB</string>
+    <string name="slider">Deslizadores</string>
+    <string name="uv">UV</string>
+    <string name="royal_blue">Royal Blue</string>
+    <string name="blue">Blue</string>
+    <string name="cool_white">Cool White</string>
+    <string name="green">Green</string>
+    <string name="red">Red</string>
+    <string name="brightness">Luminosidad</string>
+    <string name="preset_name">Nombre de ajuste</string>
+    <string name="enter_preset_name">Escriba un nombre de ajuste</string>
+    <string name="cancel">Cancelar</string>
+    <string name="save">Guardar</string>
+    <string name="forgot_preset_name">Por favor, escriba un nombre de ajuste válido</string>
+    <string name="ok">OK</string>
+    <string name="default_presets">Ajustes predeterminados</string>
+    <string name="my_presets">Mis ajustes</string>
+    <string name="thunderstorms">Tormentas</string>
+    <string name="demonstration">Demostración</string>
+    <string name="cloud_cover">Nublado</string>
+    <string name="disco_time">Disco</string>
+    <string name="high_growth">Alto crecimiento</string>
+    <string name="high_growth_description">&lt;span style=\'font-family:HelveticaNeue;color:black;background-color:rgba(0,0,0,0);font-size:16px;text-align:justify;text-wrap:normal;word-wrap:break-word\'>Empiece el d<![CDATA[&#237;]]>a con un corto per<![CDATA[&#237;]]>odo de azul intenso para resaltar la belleza de su acuario. Seguidamente, suba hasta la m<![CDATA[&#225;]]>xima intensidad y sus Radions se mantendran en su m<![CDATA[&#225;]]>xima intensidad durante el d<![CDATA[&#237;]]>a y bajar<![CDATA[&#225;]]>n a tonos azules por la tarde. Seguiran tres horas de luz de luna hasta apagarse.&lt;/span></string>
+    <string name="radiant_color">Color radiante</string>
+    <string name="radiant_color_description">&lt;span style=\'font-family:HelveticaNeue;color:black;background-color:rgba(0,0,0,0);font-size:15px;text-align:justify;text-wrap:normal;word-wrap:break-word\'>Dise<![CDATA[&#241;]]>ado para mostrar los colores m<![CDATA[&#225;]]>s vivos de sus corales, peces e invertebrados; este programa enfatiza la fluorescencia de su acuario. Empieza con azul intenso e incrementa gradualmente hasta una mezcla especial que utiliza el espectro de luz en su totalidad de colores.  A lo largo de la tarde la coloraci<![CDATA[&#243;]]>n bajar<![CDATA[&#225;]]> gradualmente hasta azul intenso y terminar<![CDATA[&#225;]]> con dos horas de luz de luna antes de apagarse.&lt;/span></string>
+    <string name="traditional_reef">Acuario de arrecife tradicional</string>
+    <string name="traditional_reef_description">&lt;span style=\'font-family:HelveticaNeue;color:black;background-color:rgba(0,0,0,0);font-size:16px;text-align:justify;text-wrap:normal;word-wrap:break-word\'>Ambiente similar al conseguido por la tecnolog<![CDATA[&#237;]]>a acuarista de iluminaci<![CDATA[&#243;]]>n tradicional. El programa empezar<![CDATA[&#225;]]> con canales azules hasta pararse en 12k de color al mediod<![CDATA[&#237;]]>a. Esto se repetir<![CDATA[&#225;]]> hasta que se apaguen las luces al anochecer. Tambi<![CDATA[&#233;]]>n hay un per<![CDATA[&#237;]]>odo de 3 horas de luz de luna hasta que la iluminaci<![CDATA[&#243;]]>n se apague por completo.&lt;/span></string>
+    <string name="fresh_aquarium">Acuario de agua dulce con plantas</string>
+    <string name="fresh_planted_description">&lt;span style=\'font-family:HelveticaNeue;color:black;background-color:rgba(0,0,0,0);font-size:16px;text-align:justify;text-wrap:normal;word-wrap:break-word\'>La creaci<![CDATA[&#243;]]>n de un ambiente tranquilo y de que para lucir los colores de tonos verdes y tierra que se encuentran en acuarios plantados, de agua dulce Acuario Plantado es un modo artificial basada en el 5K y 7K presets del Radion.&lt;/span></string>
+    <string name="shallow_reef">Arrecife poco profundo (natural)</string>
+    <string name="shallow_reef_description">&lt;span style=\'font-family:HelveticaNeue;color:black;background-color:rgba(0,0,0,0);font-size:16px;text-align:justify;text-wrap:normal;word-wrap:break-word\'>El programa Arrecife poco profundo est<![CDATA[&#225;]]> basado en mediciones de espectro obtenidas cerca de &lt;a href=\'http://en.wikipedia.org/wiki/Sipadan\' target=\'_blank\'>Sipadan Island&lt;/a>, Malaysia. Las mediciones se hicieron desde el amanecer hasta la puesta de sol justo en la superf<![CDATA[&#237;]]>cie del oc<![CDATA[&#233;]]>ano. Use este modo si quiere la programaci<![CDATA[&#243;]]>n m<![CDATA[&#225;]]>s natural para su ambiente de arrecife. Este modo no tiene programado ning<![CDATA[&#250;]]>n per<![CDATA[&#237;]]>odo de luz de luna.&lt;/span></string>
+    <string name="deep_water_reef">Arrecife profundo (natural)</string>
+    <string name="deep_water_reef_description">&lt;span style=\'font-family:HelveticaNeue;color:black;background-color:rgba(0,0,0,0);font-size:16px;text-align:justify;text-wrap:normal;word-wrap:break-word\'>Usando los mismos datos que en el programa Arrecife poco profundo, las intensidades del color de la luz de Arrecife profundo han sido alteradas para simular el azul inagotable de las profundidades del oc<![CDATA[&#233;]]>ano. Aqu<![CDATA[&#237;]]> encontrar<![CDATA[&#225;]]> una gran variedad de corales e invertebrados. Este modo no tiene programado ning<![CDATA[&#250;]]>n per<![CDATA[&#237;]]>odo de luz de luna.&lt;/span></string>
+    <string name="choose_template">Escoja esta plantilla</string>
+    <string name="done">Hecho</string>
+    <string name="saving_schedule">Guardando el programa a su perfil\.\.\.</string>
+    <string name="resetting_radions">Reajustando sus Radions\.\.\.</string>
+    <string name="error_programming">Ha habido un error durante la programación. Por favor, inténtelo de nuevo.</string>
+    <string name="programming_complete_on">La programación de su Radión está el completada</string>
+    <string name="radions_programmed">Sus Radions se han programado satisfactoriamente.</string>
+    <string name="new_schedule">Nuevo programa</string>
+    <string name="start_day">Iniciar día</string>
+    <string name="start_night">Iniciar noche</string>
+    <string name="daytime_intensity">Intensidad del periodo diurno</string>
+    <string name="wrong_start_time_msg">Las horas de inicio que ha seleccionado no son de 1 hora de diferencia. Por favor, elija un momento diferente e intente de nuevo</string>
+    <string name="wrong_start_time_title">Inicio tiempos no son 1 hora de diferencia</string>
+    <string name="error_programming_title">Radiones Programación Error</string>
+    <string name="scheduling_successful_title">Programación de éxito</string>
+    <string name="delete_preset_msg">¿Está seguro que desea eliminar este preset?</string>
+    <string name="deleted">suprimido.</string>
+    <string name="deletion">Borrar</string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+    <string name="indigo">Aañil</string>
+    <string name="violet">Violeta</string>
+    <string name="orange">Naranja</string>
+    <string name="yellow">Amarillo</string>
+    <string name="dropcam">Dropcam</string>
+
+    <!-- 1.1 Group Settings Strings -->
+    <string name="settings">Settings</string>
+    <string name="aquariums">My Aquariums</string>
+    <string name="aquarium_name">Aquarium name</string>
+    <string name="next">Next</string>
+    <string name="name_your_aquarium">Name your new aquarium</string>
+    <string name="retry">Retry</string>
+    <string name="searching_for_radions">Searching for Radions</string>
+    <string name="assigning_radions">Assigning Radions…</string>
+    <string name="save_group_setting">Saving group setting…</string>
+    <string name="ecosmart_participation">EcoSMART Participation</string>
+    <string name="override_timer">Override Timer</string>
+    <string name="acclimate_timer">Acclimate Timer</string>
+    <string name="lunar_phases">Lunar Phases</string>
+    <string name="override_length_for_radions">Change the length of time you can override your Radion\'s program using the buttons.</string>
+    <string name="override_time">Override Time (hours):</string>
+    <string name="acclimation_and_intensity">Set the acclimation period and starting intensity.</string>
+    <string name="acclimation_period">Acclimation Period (weeks):</string>
+    <string name="starting_intensity">Starting Intensity:</string>
+    <string name="lunar_phase_explanation">Lunar phases enable the Radions in the group to adjust their brightness of nighttime points, simulating a lunar cycle. The brightness is computed using the calendar date. If no nighttime points exist, lunar phases will have no effect.</string>
+    <string name="light_night_mode">When enabled, lights will put pumps into night mode.</string>
+
+    <!-- 1.1 Schedule View Strings -->
+    <string name="program">Program</string>
+    <string name="load_template">Load from Template…</string>
+    <string name="apply_overall_brightness">Applying overall brightness…</string>
+    <string name="apply_depth_offset">Applying depth offset…</string>
+    <string name="apply_overall_storm_probability">Applying overall storm probability…</string>
+    <string name="apply_overall_cloud_probability">Applying overall cloud probability…</string>
+    <string name="natural_mode_options">Natural Mode Options</string>
+    <string name="weather">Weather</string>
+    <string name="artificial_mode_options">Artificial Mode Options</string>
+    <string name="points">Points</string>
+    <string name="storm_probability">Storm Probability</string>
+    <string name="cloud_probability">Cloud Probability</string>
+    <string name="back">Back</string>
+    <string name="custom">Custom</string>
+    <string name="off">Off</string>
+    <string name="individual_colors">Individual Colors</string>
+    <string name="new_point">New Point</string>
+    <string name="edit_point">Edit Point</string>
+    <string name="enter_valid_start_time">Please enter a valid start time</string>
+    <string name="colors">Colors</string>
+    <string name="point_time">Point Time</string>
+    <string name="preset">Preset</string>
+    <string name="overall_brightness">Overall Brightness</string>
+    <string name="depth_offset">Depth Offset</string>
+    <string name="cloudy">Cloudy</string>
+    <string name="clear">Clear</string>
+    <string name="now">Now</string>
+    <string name="refreshing_schedule">Refreshing…</string>
+    <string name="loading">Loading…</string>
+    <string name="loading_complete">Loading Complete</string>
+    <string name="schedule_tooltip">Hold a point and slide to scroll.\nAdd Point: Click + at bottom.\nEdit Point: Tap highlighted point.\nDelete Point: Hold highlighted point.</string>
+    <string name="delete_data_point">Are you sure you want to delete this point?</string>
+    <string name="point">Point</string>
+    <string name="time">Time</string>
+    <string name="color">Color</string>
+
+    <!-- 1.1 New Aquarium Wizard -->
+    <string name="new_aquarium">New Aquarium</string>
+    <string name="device">Device</string>
+    <string name="new_devices">New Devices</string>
+    <string name="missing_devices">Missing Devices?</string>
+    <string name="device_type_missing">What type of device are you missing?</string>
+    <string name="select_all">Select All</string>
+    <string name="deselect_all">Deselect All</string>
+    <string name="searching_for_devices">Searching for Devices…</string>
+    <string name="addressing_devices">Addressing Devices…</string>
+    <string name="serial">Serial</string>
+    <string name="RadionXR30w">Radion XR30w</string>
+    <string name="RadionXR30wG2">Radion XR30w G2</string>
+    <string name="RadionXR30wPro">Radion XR30w Pro</string>
+    <string name="RadionXR30wG3">Radion XR30w G3</string>
+    <string name="RadionXR30wG3Pro">Radion XR30w G3 Pro</string>
+    <string name="RadionXR30wProto">Radion XR30w Pro</string>
+    <string name="no_device_selected">No Device Selected</string>
+    <string name="must_select_device">You must select a device in order to assign it to this group</string>
+    <string name="aquarium_wizard_tip">Tap a device to place them into your new group!</string>
+    <string name="no_devices_found">We could not find any devices. Please try again.</string>
+
+    <!-- Strings that do not need to be translated -->
+    <string name="app_name">EcoSmart Live</string>
+    <string name="aquarium">My Aquarium</string>
+    <string name="action_settings">Settings</string>
+    <string name="open_drawer">Open Navigation Drawer</string>
+    <string name="close_drawer">Close navigation Drawer</string>
+    <string name="circle_slider_kelvin">Slider to control blue tints</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="title_activity_overlay">Overlay</string>
+    <string name="title_activity_program_schedule">Program Schedule</string>
+    <string name="title_activity_main_menu">Main Menu</string>
+    <string name="title_activity_group_list">Group List</string>
+    <string name="title_activity_colors_view">Colors</string>
+    <string name="title_activity_save_preset_view">Save Preset</string>
+    <string name="title_activity_preview_mode_view">Preview Modes</string>
+    <string name="title_activity_preset_view">Default Presets</string>
+    <string name="title_activity_default_schedule_selector_view">Default Schedule</string>
+    <string name="title_activity_schedule_preview_view_controller">Schedule Preview</string>
+    <string name="title_activity_schedule_params_view_controller">Schedule Parameters</string>
+    <string name="title_activity_sliders_view">SlidersView</string>
+    <string name="title_activity_warning_view">WarningView</string>
+    <string name="title_activity_settings_view">SettingsView</string>
+    <string name="hello_world">Hello World!</string>
+
+    <string-array name="menu_presets">
+        <item>@string/color_channels</item>
+        <item>@string/presets</item>
+        <item>@string/preview_modes</item>
+        <item>@string/schedule</item>
+        <item>@string/settings</item>
+        <item>@string/dropcam</item>
+    </string-array>
+    <string-array name="previewsList">
+        <item>@string/thunderstorms</item>
+        <item>@string/demonstration</item>
+        <item>@string/cloud_cover</item>
+        <item>@string/disco_time</item>
+    </string-array>
+    <string-array name="schedList">
+        <item>@string/high_growth</item>
+        <item>@string/start_day</item>
+        <item>@string/start_night</item>
+    </string-array>
+    <string-array name="schedTitle">
+        <item>@string/high_growth</item>
+        <item>@string/radiant_color</item>
+        <item>@string/traditional_reef</item>
+        <item>@string/fresh_aquarium</item>
+        <item>@string/shallow_reef</item>
+        <item>@string/deep_water_reef</item>
+    </string-array>
+    <string-array name="settings_array">
+        <item>@string/override_timer</item>
+        <item>@string/acclimate_timer</item>
+        <item>@string/lunar_phases</item>
+    </string-array>
+    <string-array name="point_view_headers">
+        <item>@string/time</item>
+        <item>@string/colors</item>
+        <item>@string/weather</item>
+    </string-array>
+
+    <string name="title_activity_settings_overlay">SettingsOverlay</string>
+    <string name="title_activity_schedule_template_menu">ScheduleTemplateMenu</string>
+    <string name="title_activity_schedule_navigation_menu">ScheduleNavigationMenu</string>
+    <string name="title_activity_schedule_point_view">SchedulePointView</string>
+    <string name="title_activity_save_new_aquarium">SaveNewAquarium</string>
+    <string name="title_activity_schedule_graph_view">ScheduleGraphView</string>
+    <string name="title_activity_preset_selection">PresetSelection</string>
+    <string name="title_activity_color_selection">ColorSelection</string>
+    <string name="title_activity_transparent_overlay">TransparentOverlay</string>
+    <string name="title_activity_default_overlay">DefaultOverlay</string>
+    <string name="title_activity_new_aquarium_list">NewAquariumList</string>
+    <string name="title_activity_add_radion_view">AddRadionView</string>
+    <string name="title_activity_aquarium_search_overlay">AquariumSearchOverlay</string>
+
+</resources>

@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- These keys are matched up to the values in the iPhone app -->
+    <string name="all_groups">All Aquariums</string>
+    <string name="color_channels">Color Channels</string>
+    <string name="presets">Presets</string>
+    <string name="preview_modes">Preview Modes</string>
+    <string name="schedule">Schedule</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="empty_profile">Your EcoSmart Live Profile is Empty</string>
+    <string name="info_empty_profile">(add some Radions and try again)</string>
+    <string name="warning_not_connect">EcoSmart Live could not connect to your Radions</string>
+    <string name="warning_not_connect2">(Please check your connection and try again)</string>
+    <string name="warning_no_internet">EcoSmart Live was unable to connect to the Internet</string>
+    <string name="warning_no_internet2">(Please check your connection and try again)</string>
+    <string name="login">Login</string>
+    <string name="invalid_login_title">Incorrect Login</string>
+    <string name="invalid_login">The email and password you entered are incorrect. Please try again.</string>
+    <string name="username_entry">Email Address</string>
+    <string name="password_entry">Password</string>
+    <string name="connecting_to_esl">Connecting to EcoSmart Live…</string>
+    <string name="save_preset">Save Preset</string>
+    <string name="saved">saved.</string>
+    <string name="kelvin">Kelvin</string>
+    <string name="rgb">RGB</string>
+    <string name="slider">Slider</string>
+    <string name="uv">UV</string>
+    <string name="royal_blue">Royal Blue</string>
+    <string name="blue">Blue</string>
+    <string name="cool_white">Cool White</string>
+    <string name="green">Green</string>
+    <string name="red">Red</string>
+    <string name="brightness">Brightness</string>
+    <string name="enter_preset_name">Enter a preset name.</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="forgot_preset_name">Please enter a valid preset name.</string>
+    <string name="ok">OK</string>
+    <string name="default_presets">Default Presets</string>
+    <string name="my_presets">My Presets</string>
+    <string name="thunderstorms">Thunderstorms</string>
+    <string name="demonstration">Demo</string>
+    <string name="cloud_cover">Cloud Cover</string>
+    <string name="disco_time">Disco Time</string>
+    <string name="high_growth">High Growth</string>
+    <string name="high_growth_description">&lt;span style=\'font-family:HelveticaNeue;color:black;background-color:rgba(0,0,0,0);font-size:16px;text-align:justify;text-wrap:normal;word-wrap:break-word\'>Beginning the day with a brief period of deep blue to highlight the beauty in your aquarium, then quickly ramping up to maximum intensity; your Radions&lt;sup style=\'font-size:8px\'>TM&lt;/sup> will stay at maximum intensity for the duration of the day and then ramp back down to blues in the evening, followed by a three-hour moonlight period before turning off.&lt;/span></string>
+    <string name="radiant_color">Radiant Color</string>
+    <string name="radiant_color_description">&lt;span style=\'font-family:HelveticaNeue;color:black;background-color:rgba(0,0,0,0);font-size:15px;text-align:justify;text-wrap:normal;word-wrap:break-word\'>Designed to display your coral, fish and invertebrates most vibrant colors, this schedule emphasizes fluorescence in your aquarium. It begins with deep blue before gradually increasing to a special blend that utilizes the full color spectrum. During the evening, this schedule will gradually ramp the coloration back to deep blue, finishing with a two-hour moonlight period before turning off.&lt;/span></string>
+    <string name="traditional_reef">Traditional Reef Aquarium</string>
+    <string name="traditional_reef_description">&lt;span style=\'font-family:HelveticaNeue;color:black;background-color:rgba(0,0,0,0);font-size:16px;text-align:justify;text-wrap:normal;word-wrap:break-word\'>An environment similar to that achieved with traditional aquarium lighting technologies, the schedule will begin with blue channels, before stepping up to a 12k color during mid-day. This will repeat as the lights step down for the evening. There is also a moonlight period for three hours before the lights turn off.&lt;/span></string>
+    <string name="fresh_aquarium">Fresh Planted Aquarium</string>
+    <string name="fresh_planted_description">&lt;span style=\'font-family:HelveticaNeue;color:black;background-color:rgba(0,0,0,0);font-size:16px;text-align:justify;text-wrap:normal;word-wrap:break-word\'>Creating a warm environment with which to show off the green and earth tone colors found in planted aquariums, &lt;span style=\'font-style:italic\'>Freshwater Planted Aquarium&lt;/span> is an artificial mode based on the 5K and 7K presets of the Radion&lt;sup style=\'font-size:8px\'>TM&lt;/sup>.&lt;/span></string>
+    <string name="shallow_reef">Shallow Reef (Natural)</string>
+    <string name="shallow_reef_description">&lt;span style=\'font-family:HelveticaNeue;color:black;background-color:rgba(0,0,0,0);font-size:16px;text-align:justify;text-wrap:normal;word-wrap:break-word\'>The &lt;span style=\'font-style:italic\'>Shallow Reef&lt;/span> schedule is based off spectrum measurements collected near &lt;a href=\'http://en.wikipedia.org/wiki/Sipadan\' target=\'_blank\'>Sipadan Island&lt;/a> in Malaysia. The measurements were made from sunrise to sunset just above the ocean. Use this mode if you are looking for the most natural setting for your reef environment. There is no moonlight period set for this mode.&lt;/span></string>
+    <string name="deep_water_reef">Deep Water Reef (Natural)</string>
+    <string name="deep_water_reef_description">&lt;span style=\'font-family:HelveticaNeue;color:black;background-color:rgba(0,0,0,0);font-size:16px;text-align:justify;text-wrap:normal;word-wrap:break-word\'>Using the same data as the &lt;span style=\'font-style:italic\'>Shallow Reef&lt;/span> schedule, the &lt;span style=\'font-style:italic\'>Deep Water Reef&lt;/span> schedule color intensities have been altered to simulate the endless blue as you descend deep into the ocean. Here, you will often find a wide variety of coral and invertebrates. There is no moonlight period set for this mode.&lt;/span></string>
+    <string name="choose_template">Choose This Template</string>
+    <string name="done">Done</string>
+    <string name="saving_schedule">Saving Schedule to Your Profile…</string>
+    <string name="resetting_radions">Resetting Radions…</string>
+    <string name="error_programming">An error occurred while programming. Please try again</string>
+    <string name="programming_complete_on">Programming complete on Radion</string>
+    <string name="radions_programmed">Your Radions were successfully programmed.</string>
+    <string name="new_schedule">New Schedule</string>
+    <string name="start_day">Start Day</string>
+    <string name="start_night">Start Night</string>
+    <string name="daytime_intensity">Daytime Intensity</string>
+    <string name="wrong_start_time_msg">The start times you have selected are not 1 hour apart. Please choose a different time and try again</string>
+    <string name="wrong_start_time_title">Start Times Are Not 1 Hour Apart</string>
+    <string name="error_programming_title">Error Programming Radions</string>
+    <string name="scheduling_successful_title">Scheduling Successful</string>
+    <string name="delete_preset_msg">Are you sure you want to delete this preset?</string>
+    <string name="deleted">deleted.</string>
+    <string name="delete">Delete</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="indigo">Indigo</string>
+    <string name="violet">Violet</string>
+    <string name="orange">Orange</string>
+    <string name="yellow">Yellow</string>
+    <string name="dropcam">Dropcam</string>
+
+    <!-- 1.1 Group Settings Strings -->
+    <string name="settings">Settings</string>
+    <string name="aquariums">My Aquariums</string>
+    <string name="aquarium_name">Aquarium name</string>
+    <string name="next">Next</string>
+    <string name="name_your_aquarium">Name your new aquarium</string>
+    <string name="retry">Retry</string>
+    <string name="searching_for_radions">Searching for Radions</string>
+    <string name="assigning_radions">Assigning Radions…</string>
+    <string name="save_group_setting">Saving group setting…</string>
+    <string name="ecosmart_participation">EcoSMART Participation</string>
+    <string name="override_timer">Override Timer</string>
+    <string name="acclimate_timer">Acclimate Timer</string>
+    <string name="lunar_phases">Lunar Phases</string>
+    <string name="override_length_for_radions">Change the length of time you can override your Radion\'s program using the buttons.</string>
+    <string name="override_time">Override Time (hours):</string>
+    <string name="acclimation_and_intensity">Set the acclimation period and starting intensity.</string>
+    <string name="acclimation_period">Acclimation Period (weeks):</string>
+    <string name="starting_intensity">Starting Intensity:</string>
+    <string name="lunar_phase_explanation">Lunar phases enable the Radions in the group to adjust their brightness of nighttime points, simulating a lunar cycle. The brightness is computed using the calendar date. If no nighttime points exist, lunar phases will have no effect.</string>
+    <string name="light_night_mode">When enabled, lights will put pumps into night mode.</string>
+
+    <!-- 1.1 Schedule View Strings -->
+    <string name="program">Program</string>
+    <string name="load_template">Load from Template…</string>
+    <string name="apply_overall_brightness">Applying overall brightness…</string>
+    <string name="apply_depth_offset">Applying depth offset…</string>
+    <string name="apply_overall_storm_probability">Applying overall storm probability…</string>
+    <string name="apply_overall_cloud_probability">Applying overall cloud probability…</string>
+    <string name="natural_mode_options">Natural Mode Options</string>
+    <string name="weather">Weather</string>
+    <string name="artificial_mode_options">Artificial Mode Options</string>
+    <string name="points">Points</string>
+    <string name="storm_probability">Storm Probability</string>
+    <string name="cloud_probability">Cloud Probability</string>
+    <string name="back">Back</string>
+    <string name="custom">Custom</string>
+    <string name="off">Off</string>
+    <string name="individual_colors">Individual Colors</string>
+    <string name="new_point">New Point</string>
+    <string name="edit_point">Edit Point</string>
+    <string name="enter_valid_start_time">Please enter a valid start time</string>
+    <string name="colors">Colors</string>
+    <string name="point_time">Point Time</string>
+    <string name="preset">Preset</string>
+    <string name="overall_brightness">Overall Brightness</string>
+    <string name="depth_offset">Depth Offset</string>
+    <string name="cloudy">Cloudy</string>
+    <string name="clear">Clear</string>
+    <string name="now">Now</string>
+    <string name="refreshing_schedule">Refreshing…</string>
+    <string name="loading">Loading…</string>
+    <string name="loading_complete">Loading Complete</string>
+    <string name="schedule_tooltip">Hold a point and slide to scroll.\nAdd Point: Click + at bottom.\nEdit Point: Tap highlighted point.\nDelete Point: Hold highlighted point.</string>
+    <string name="delete_data_point">Are you sure you want to delete this point?</string>
+    <string name="point">Point</string>
+    <string name="time">Time</string>
+    <string name="color">Color</string>
+
+    <!-- 1.1 New Aquarium Wizard -->
+    <string name="new_aquarium">New Aquarium</string>
+    <string name="device">Device</string>
+    <string name="new_devices">New Devices</string>
+    <string name="missing_devices">Missing Devices?</string>
+    <string name="device_type_missing">What type of device are you missing?</string>
+    <string name="select_all">Select All</string>
+    <string name="deselect_all">Deselect All</string>
+    <string name="searching_for_devices">Searching for Devices…</string>
+    <string name="addressing_devices">Addressing Devices…</string>
+    <string name="serial">Serial</string>
+    <string name="no_device_selected">No Device Selected</string>
+    <string name="must_select_device">You must select a device in order to assign it to this group</string>
+    <string name="aquarium_wizard_tip">Tap a device to place them into your new group!</string>
+    <string name="no_devices_found">We could not find any devices. Please try again.</string>
+
+    <!-- 1.2 Legacy Light Wizard -->
+    <string name="radion">Radion</string>
+    <string name="add_light_via_usb">Add Light via USB</string>
+    <string name="updating_radion_firmware">Updating Radion Firmware…</string>
+    <string name="initializing_firmware_update">Initializing Firmware Update…</string>
+    <string name="factory_reset">Factory Resetting Device…</string>
+    <string name="add_radion">Add Radion</string>
+    <string name="radion_updated">Your Radion was successfully updated. Would you like to add another?</string>
+    <string name="error_updating_radion">An error occurred while updating your Radion. Would you like to try again?</string>
+    <string name="verify_serial_number">Please use the serial number below to verify that the correct device was found or use the Identify button.</string>
+    <string name="device_found">Device Found</string>
+    <string name="plug_usb_cable">Plug in your USB cable to a missing Radion.</string>
+    <string name="waiting_for_device_connection">Waiting for device connection…</string>
+    <string name="model">Model</string>
+    <string name="serial_number">Serial Number</string>
+
+    <!-- 1.2 Legacy Pump Wizard -->
+    <string name="vortech">VorTech</string>
+    <string name="add_vortech">Add VorTech</string>
+    <string name="add_legacy_vortech">Add or Update VorTech</string>
+    <string name="hold_mode_and_set">Hold Mode and Set simultaneously while powering on your driver and continue holding until the control dial blinks red and white, then let go.</string>
+    <string name="hold_set_until_control_dial">Hold Set until the control dial is green and blue, then let go. The firmware update process will start automatically.</string>
+    <string name="updating_vortech_firmware">Updating VorTech Firmware…</string>
+    <string name="vortech_power">VorTech Power</string>
+    <string name="all_vortechs_powered_on">Please make sure all of your VorTechs are powered on before continuing.</string>
+    <string name="prepare_device_for_update">Preparing Device for Update…</string>
+    <string name="vortech_updated">Your VorTech was successfully updated. Would you like to add another?</string>
+    <string name="error_updating_vortech">An error occurred while updating your VorTech. Would you like to try again?</string>
+    <string name="turn_off_all_pumps">Turn off all of your VorTech pumps by removing power from the drivers.</string>
+    <string name="update_total_time">(The update will take about 3 minutes to complete)</string>
+    <string name="update_error">Update Error</string>
+
+    <!-- 1.2 Main Menu Strings -->
+    <string name="live_demo">Live Demo</string>
+    <string name="whats_new">What\'s New</string>
+    <string name="home">Home</string>
+    <string name="other">Other</string>
+
+    <!-- 1.2 Live Demo Strings -->
+    <string name="max">Max</string>
+    <string name="min">Min</string>
+    <string name="mode">Mode</string>
+    <string name="pulse_time">Pulse Time</string>
+    <string name="tap_or_swipe_center">Tap or swipe the center of the circle to change modes</string>
+    <string name="select_different_pumps">Select different pumps by tapping this list</string>
+    <string name="tap_here_to_save_it">Once you find a mode you like, tap here to save it.</string>
+    <string name="tap_force_pumps">Tap this icon to force your pumps to return to their schedule</string>
+    <string name="set_pump_speed">Tap or drag around the speed wheel here to set pump speed</string>
+    <string name="tap_to_dismiss">Tap to dismiss</string>
+    <string name="constant_speed">Constant Speed</string>
+    <string name="short_pulse">Short Pulse</string>
+    <string name="short_pulse_description">Short Pulse Mode allows for pulsing the pump from minimum to a set maximum speed for between 0.3 seconds and 2 seconds per pulse for the MP40w and between 0.25 seconds and 1.5 seconds for the MP10 and MP10w. This mode is generally used when one wants to create a resonant standing wave in the aquarium. A resonant standing wave refers to a gentle back and forth motion that can be created in the aquarium if you tune the pulse frequency of your VorTech pump to match the harmonic resonant frequency of your aquarium. For every different sized aquarium, there will be a unique resonant frequency. Your EcoSmart driver allows you to auto-tune this frequency and also to save it once the frequency has been found. Short Pulse Mode can then be used if you would like a wave running all the time, or you can use an EcoSmart mode which will auto-load your saved wave frequency and use it during points in the EcoSmart program. In this mode, your slave driver will ramp it’s LED strip.</string>
+    <string name="long_pulse">Long Pulse</string>
+    <string name="long_pulse_description">Long Pulse Mode allows for pulsing the pump from minimum to a set maximum of between two seconds and one minute per pulse. This mode is ideal for the creation of gyre flow within the aquarium. To create a gyre, a minimum of four pumps is ideal. Two pumps would be placed on one side of the aquarium and two pumps on the other side of the aquarium. The pumps in opposite corners will be synced together and the other two pumps would be anti-synced. When run in Long Pulse Mode, this will create a flow pattern which alternates from clockwise to counter-clockwise.</string>
+    <string name="reefcrest">Reefcrest</string>
+    <string name="reefcrest_description">Reefcrest Random Mode mimics a high-energy reef zone such as that found on the reefcrest of a natural coral reef. In this zone of the coral reef, the waves crash down upon the reef providing frequent surges in flow. Reefcrest Mode simulates this environment by automatically changing the speed of your pump frequently and drastically.</string>
+    <string name="lagoon">Lagoon</string>
+    <string name="lagoon_description">Lagoon Random Mode mimics the low-energy reef zone such as that found in a lagoon. A lagoon is protected from the high energy of large waves and therefore the corals that come from this zone are used to slower, more gentle currents than those found in a Reefcrest environment. Lagoon Mode simulates this environment by automatically changing the speed of your pump slowly.</string>
+    <string name="tidal_swell">Tidal Swell</string>
+    <string name="tidal_swell_description">This EcoSmart mode is used to create a harmonic balance in your aquarium reminiscent of the changing flow conditions that would be found in nature. In this mode, your EcoSmart master driver will be purple and your slave driver will flash white/orange/teal and indicate it speed by the LED strip. The first two LED’s will indicate which EcoSmart mode you are in.</string>
+    <string name="nutrient_transport">Nutrient Transport</string>
+    <string name="nutrient_transport_description">In this EcoSmart mode, water is circulated in a two phase program to promote maximum health and nutrient export, as well as increased growth for sensitive corals such as SPS. In this mode,your EcoSmart master driver will be purple and your slave driver will flash white/orange/teal and indicate its speed by the LED strip. The third and fourth LED’s will indicate which EcoSmart mode you are in.</string>
+    <string name="expanding_pulse">Expanding Pulse</string>
+    <string name="pumps">Pumps</string>
+    <string name="all_pumps">All Pumps</string>
+    <string name="feed_mode">Feed Mode</string>
+
+    <!-- 1.2 Pump Preset Strings -->
+    <string name="default_pump_presets">Default Pump Presets</string>
+    <string name="my_pump_presets">My Pump Presets</string>
+
+    <!-- 1.2 Device Manager Strings -->
+    <string name="tap_device_icon">Tap the device icon to identify. Tap-and-hold the device name to delete</string>
+    <string name="tap_hold_rename">Tap-and-hold the device name to rename the current device</string>
+    <string name="radions">Radions</string>
+    <string name="device_details">Device Details</string>
+    <string name="delete_radion_msg">Are you sure you want to remove this Radion from the current group?</string>
+    <string name="delete_pump_msg">Are you sure you want to remove this VorTech pump from the current group?</string>
+    <string name="name">Name</string>
+    <string name="last_time">Last Time</string>
+    <string name="os_rev">OS Rev</string>
+    <string name="bootloader_rev">Bootloader Rev</string>
+    <string name="rf_rev">RF Rev</string>
+    <string name="rf_frequency">RF Frequency</string>
+    <string name="operating_mode">Operating Mode</string>
+    <string name="os">OS</string>
+    <string name="error_state">Error State</string>
+    <string name="no_error">No Error</string>
+    <string name="local_control">Local Control</string>
+    <string name="subnet">Subnet</string>
+    <string name="rf_status">RF Status</string>
+    <string name="slave_to">Slave To</string>
+    <string name="current_mode">Current Mode</string>
+    <string name="power_state">Power State</string>
+    <string name="not_available">N/A</string>
+    <string name="operating_state">Operating State</string>
+    <string name="set">Set</string>
+    <string name="set_time_devices">All devices in group set to </string>
+    <string name="removed">Removed</string>
+    <string name="remove">Remove</string>
+    <string name="remove_aquarium_confirmation">Are you sure you want to remove this aquarium?</string>
+    <string name="factory_reset_device">Are you sure you want to factory reset this device?</string>
+    <string name="reset">Factory Reset</string>
+    <string name="rebooting_device">Rebooting Device…</string>
+    <string name="rename">Rename</string>
+    <string name="device_refreshed">Device Refreshed</string>
+    <string name="devices_refreshed">Devices Refreshed</string>
+    <string name="refreshing_device">Refreshing Device…</string>
+    <string name="renamed">renamed to</string>
+    <string name="group">Group</string>
+
+    <!-- 1.2 List of All Supported Devices -->
+    <string name="RadionXR30w">Radion XR30w</string>
+    <string name="RadionXR30wG2">Radion XR30w G2</string>
+    <string name="RadionXR30wPro">Radion XR30w Pro</string>
+    <string name="RadionXR30wG3">Radion XR30w G3</string>
+    <string name="RadionXR30wG3Pro">Radion XR30w G3 Pro</string>
+    <string name="RadionXR30wProto">Radion XR30w Pro</string>
+    <string name="RadionXR15wG3Pro">Radion XR15w G3 Pro</string>
+    <string name="RadionXR15FW">Radion XR15 FW</string>
+    <string name="MP10wES">MP10wES</string>
+    <string name="MP40wES">MP40wES</string>
+    <string name="MP60wES">MP60wES</string>
+
+    <!-- Strings that do not need to be translated -->
+    <string name="app_name">EcoSmart Live</string>
+    <string name="aquarium">My Aquarium</string>
+    <string name="action_settings">Settings</string>
+    <string name="open_drawer">Open Navigation Drawer</string>
+    <string name="close_drawer">Close navigation Drawer</string>
+    <string name="circle_slider_kelvin">Slider to control blue tints</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="title_activity_overlay">Overlay</string>
+    <string name="title_activity_program_schedule">Program Schedule</string>
+    <string name="title_activity_main_menu">Main Menu</string>
+    <string name="title_activity_group_list">Group List</string>
+    <string name="title_activity_colors_view">Colors</string>
+    <string name="title_activity_save_preset_view">Save Preset</string>
+    <string name="title_activity_preview_mode_view">Preview Modes</string>
+    <string name="title_activity_preset_view">Default Presets</string>
+    <string name="title_activity_default_schedule_selector_view">Default Schedule</string>
+    <string name="title_activity_schedule_preview_view_controller">Schedule Preview</string>
+    <string name="title_activity_schedule_params_view_controller">Schedule Parameters</string>
+    <string name="title_activity_sliders_view">SlidersView</string>
+    <string name="title_activity_warning_view">WarningView</string>
+    <string name="title_activity_settings_view">SettingsView</string>
+    <string name="hello_world">Hello World!</string>
+
+    <string-array name="menu_presets">
+        <item>@string/color_channels</item>
+        <item>@string/presets</item>
+        <item>@string/preview_modes</item>
+        <item>@string/schedule</item>
+        <item>@string/settings</item>
+        <item>@string/dropcam</item>
+    </string-array>
+    <string-array name="previewsList">
+        <item>@string/thunderstorms</item>
+        <item>@string/demonstration</item>
+        <item>@string/cloud_cover</item>
+        <item>@string/disco_time</item>
+    </string-array>
+    <string-array name="schedList">
+        <item>@string/high_growth</item>
+        <item>@string/start_day</item>
+        <item>@string/start_night</item>
+    </string-array>
+    <string-array name="schedTitle">
+        <item>@string/high_growth</item>
+        <item>@string/radiant_color</item>
+        <item>@string/traditional_reef</item>
+        <item>@string/fresh_aquarium</item>
+        <item>@string/shallow_reef</item>
+        <item>@string/deep_water_reef</item>
+    </string-array>
+    <string-array name="settings_array">
+        <item>@string/override_timer</item>
+        <item>@string/acclimate_timer</item>
+        <item>@string/lunar_phases</item>
+    </string-array>
+    <string-array name="point_view_headers">
+        <item>@string/time</item>
+        <item>@string/colors</item>
+        <item>@string/weather</item>
+    </string-array>
+
+    <string name="title_activity_settings_overlay">SettingsOverlay</string>
+    <string name="title_activity_schedule_template_menu">ScheduleTemplateMenu</string>
+    <string name="title_activity_schedule_navigation_menu">ScheduleNavigationMenu</string>
+    <string name="title_activity_schedule_point_view">SchedulePointView</string>
+    <string name="title_activity_save_new_aquarium">SaveNewAquarium</string>
+    <string name="title_activity_schedule_graph_view">ScheduleGraphView</string>
+    <string name="title_activity_preset_selection">PresetSelection</string>
+    <string name="title_activity_color_selection">ColorSelection</string>
+    <string name="title_activity_transparent_overlay">TransparentOverlay</string>
+    <string name="title_activity_default_overlay">DefaultOverlay</string>
+    <string name="title_activity_new_aquarium_list">NewAquariumList</string>
+    <string name="title_activity_add_radion_view">AddRadionView</string>
+    <string name="title_activity_aquarium_search_overlay">AquariumSearchOverlay</string>
+    <string name="title_activity_legacy_radion_view">LegacyRadionView</string>
+    <string name="title_activity_legacy_vortech_view">LegacyVortechView</string>
+    <string name="title_activity_legacy_menu_overlay">LegacyMenuOverlay</string>
+    <string name="title_activity_vortech_update_overlay">VortechUpdateOverlay</string>
+    <string name="title_activity_radion_update_overlay">RadionUpdateOverlay</string>
+    <string name="title_activity_pulse_info_overlay">PulseInfoOverlay</string>
+    <string name="title_activity_pump_selection_list">PumpSelectionList</string>
+    <string name="title_activity_device_manager_list">DeviceManagerList</string>
+    <string name="title_activity_device_details_list">DeviceDetailsList</string>
+    <string name="title_activity_device_manager_overlay">DeviceManagerOverlay</string>
+    <string name="title_activity_device_details_overlay">DeviceDetailsOverlay</string>
+
+</resources>

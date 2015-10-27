@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/settings_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/acclimate_timer"
+        android:textStyle="bold"
+        android:textColor="@color/LightSteelBlue"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/settings_content"
+        android:layout_below="@+id/settings_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/settings_view_bg">
+
+        <ToggleButton
+            android:id="@+id/settings_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/settings_toggle_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/settings_toggle"
+            android:paddingBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:text="@string/acclimation_and_intensity"/>
+
+        <TextView
+            android:id="@+id/settings_time_title"
+            android:layout_below="@+id/settings_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/acclimation_period"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"/>
+
+        <RadioGroup
+            android:id="@+id/settings_segment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingBottom="20dp"
+            android:layout_below="@+id/settings_time_title"
+            android:weightSum="7">
+
+            <RadioButton
+                android:id="@+id/settings_radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/settings_segment"
+                android:button="@null"
+                android:textColor="@color/black"
+                android:text="1"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:id="@+id/settings_radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/settings_segment"
+                android:button="@null"
+                android:textColor="@color/black"
+                android:text="2"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:id="@+id/settings_radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/settings_segment"
+                android:button="@null"
+                android:textColor="@color/black"
+                android:text="3"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:id="@+id/settings_radio4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/settings_segment"
+                android:textColor="@color/black"
+                android:button="@null"
+                android:text="4"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:id="@+id/settings_radio5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/settings_segment"
+                android:button="@null"
+                android:textColor="@color/black"
+                android:text="5"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:id="@+id/settings_radio6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/settings_segment"
+                android:button="@null"
+                android:textColor="@color/black"
+                android:text="6"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:id="@+id/settings_radio7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/settings_segment"
+                android:button="@null"
+                android:textColor="@color/black"
+                android:text="7"
+                android:layout_weight="1"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/settings_intensity_title"
+            android:layout_below="@+id/settings_segment"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/starting_intensity"/>
+
+        <TextView
+            android:id="@+id/settings_intensity_value"
+            android:layout_below="@id/settings_segment"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="0%"/>
+
+        <SeekBar
+            android:id="@+id/settings_intensity_slider"
+            android:layout_below="@id/settings_intensity_title"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/white_progress"
+            android:thumb="@drawable/blue_thumb"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

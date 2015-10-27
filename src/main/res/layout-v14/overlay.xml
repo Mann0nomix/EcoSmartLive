@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/connect_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BF000000">
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/connect_text"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/connect_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="22sp"
+        android:textColor="@color/White"
+        android:text="@string/connecting_to_esl"
+        android:layout_centerVertical="true"
+        android:gravity="center"/>
+
+</RelativeLayout>

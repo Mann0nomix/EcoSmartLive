@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/GhostWhite"
+    tools:context=".DeviceManagerList">
+
+    <RelativeLayout
+        android:id="@+id/device_manager_footer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:background="#A90077FF">
+
+        <ImageButton
+            android:id="@+id/device_manager_menu_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_menu_sort_by_size"/>
+
+        <ImageButton
+            android:id="@+id/device_manager_refresh_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_action_refresh"/>
+
+        <ImageButton
+            android:id="@+id/device_manager_add_device"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_input_add"
+            android:tint="@color/white"
+            android:scaleType="fitCenter"/>
+
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/device_manager_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollingCache="false"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:transcriptMode="normal"
+        android:layout_above="@id/device_manager_footer">
+
+    </ExpandableListView>
+
+</RelativeLayout>

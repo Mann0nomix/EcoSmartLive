@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/GhostWhite"
+    tools:context=".SavePresetView">
+
+    <EditText android:id="@+id/save_aquarium_text_field"
+        android:inputType="text"
+        android:background="@drawable/api7_edittext"
+        android:hint="@string/name_your_aquarium"
+        android:textColor="@android:color/white"
+        android:textColorHint="#33b5e5"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:ellipsize="end"/>
+
+</RelativeLayout>

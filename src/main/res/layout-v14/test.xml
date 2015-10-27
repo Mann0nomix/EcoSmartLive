@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pump_live_demo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/pump_background"
+        android:contentDescription="Pump Background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/login_bg_photo"/>
+
+    <ImageView android:id="@+id/pump_save_preset_button"
+        android:contentDescription="Save_Preset"
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:src="@drawable/button_save_preset"
+        android:clickable="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView android:id="@+id/pump_schedule_button"
+        android:contentDescription="Back to Schedule"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="10dp"
+        android:src="@drawable/icon_calendar"
+        android:clickable="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView android:id="@+id/pulse_info"
+        android:contentDescription="Pulse Info"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="10dp"
+        android:src="@drawable/icon_graph"
+        android:clickable="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/pump_color_wheel_bubble"
+        android:contentDescription="Color Label"
+        android:layout_width="125dp"
+        android:layout_height="70dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/color_wheel_bubble"
+        android:layout_above="@+id/pump_circle"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/pump_circle_detail"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="24sp"
+        android:fontFamily="Condensed Regular"
+        android:textColor="@color/DodgerBlue"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="14dp"
+        android:layout_alignTop="@+id/pump_color_wheel_bubble"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/pump_circle"
+        android:contentDescription="Kelvin Wheel"
+        android:layout_height="345dp"
+        android:layout_width="345dp"
+        android:layout_gravity="center"
+        android:src="@drawable/circle_slider_kelvin_no_labels"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/min"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/pump_color_wheel_bubble"
+        android:layout_below="@id/pump_color_wheel_bubble"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/max_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/max"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_toLeftOf="@id/pump_color_wheel_bubble"
+        android:layout_below="@id/pump_color_wheel_bubble"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/pumps_in_group"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:text="Device 3"
+        android:textSize="22sp"
+        android:textColor="@color/DodgerBlue"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:contentDescription="Decrement Pulse"
+        android:id="@+id/decrement_pulse"
+        android:scaleType="fitCenter"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/pumps_in_group"
+        android:src="@drawable/minus_icon"
+        android:tint="@color/white"/>
+
+    <ImageView
+        android:contentDescription="Increment Pulse"
+        android:id="@+id/increment_pulse"
+        android:scaleType="fitCenter"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/pumps_in_group"
+        android:src="@android:drawable/ic_input_add"
+        android:tint="@color/white"/>
+
+    <SeekBar
+        android:id="@+id/pulse_time_slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="50"
+        android:paddingBottom="10dp"
+        android:progressDrawable="@drawable/blue_progress"
+        android:thumb="@drawable/blue_thumb"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/decrement_pulse"
+        android:layout_toLeftOf="@+id/increment_pulse"
+        android:layout_above="@id/pumps_in_group"/>
+
+    <TextView
+        android:id="@+id/pulse_time_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:text="@string/pulse_time"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_above="@+id/pulse_time_slider"
+        android:layout_toRightOf="@id/decrement_pulse"/>
+
+    <TextView
+        android:id="@+id/dynamic_pulse_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1s"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:paddingRight="15dp"
+        android:layout_above="@+id/pulse_time_slider"
+        android:layout_toLeftOf="@id/increment_pulse"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/mode_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mode"
+            android:textSize="22sp"
+            android:textColor="#FF333333"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/pulse_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nutrient_transport"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_below="@+id/mode_header"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

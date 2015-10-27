@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Black"
+    tools:context=".GroupList">
+
+    <RelativeLayout
+        android:id="@+id/my_aquariums_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/DodgerBlue"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aquariums"
+            android:layout_centerVertical="true"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_input_add"
+            android:background="@android:color/transparent"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/group_list"
+        android:layout_below="@+id/my_aquariums_header"
+        android:layout_height="match_parent"
+        android:layout_width="320dp"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

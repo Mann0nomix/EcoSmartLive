@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingBottom="10dp">
+
+    <RelativeLayout
+        android:id="@+id/device_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/aquarium_list_border"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <RelativeLayout
+            android:id="@+id/device_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="20dp"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/device_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="120dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="Device 1" />
+
+            <TextView
+                android:id="@+id/device_name"
+                android:layout_below="@+id/device_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:text="Radion XR30w G2"/>
+
+            <TextView
+                android:id="@+id/device_serial"
+                android:layout_below="@id/device_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:text="Serial: 08464501210138"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/device_image"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="3dp"
+            android:src="@drawable/icon_radion"
+            android:scaleType="fitStart"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

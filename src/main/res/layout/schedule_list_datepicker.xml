@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:background="@android:color/transparent">
+
+    <TextView
+        android:id="@+id/sched_list_text"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:textColor="@color/Black"
+        android:paddingLeft="20dp"
+        android:background="@drawable/child_selector"/>
+
+    <TextView
+        android:id="@+id/sched_list_picker"
+        android:contentDescription="The Icon!"
+        android:text="9:00 AM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"/>
+
+</FrameLayout>

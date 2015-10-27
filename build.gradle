@@ -1,0 +1,29 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.2.2'
+    }
+}
+apply plugin: 'com.android.application'
+
+repositories {
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '22.0.1'
+
+    defaultConfig {
+        targetSdkVersion 22
+        minSdkVersion 8
+    }
+}
+
+dependencies {
+    compile files('./libs/websocket-1.1.jar')
+    compile 'com.android.support:support-v4:22.1.1'
+    compile 'com.android.support:appcompat-v7:22.1.1'
+}

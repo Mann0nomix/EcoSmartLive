@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp">
+
+    <TextView
+        android:id="@+id/txtGroupList2"
+        android:layout_width="225dp"
+        android:layout_height="40dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:textColor="@color/White"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/radionGroupList2"
+        android:text="1 Radion"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/White"
+        android:paddingTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <ImageView
+        android:id="@+id/icon_device_manager"
+        android:contentDescription="The Icon!"
+        android:src="@android:drawable/ic_menu_info_details"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:scaleType="fitCenter"
+        android:tint="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

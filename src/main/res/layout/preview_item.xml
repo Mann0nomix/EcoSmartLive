@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/preview_item"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@drawable/preview_bg"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/preview_image"
+        android:contentDescription="Preview Mode Item"
+        android:layout_width="90dp"
+        android:layout_height="65dp"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/button_cloud_cover"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/preview_item_text"
+        android:layout_below="@+id/preview_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="140dp"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true"
+        android:text="Thunderstorms"
+        android:textSize="20sp"
+        android:textColor="@drawable/preview_text_color"/>
+
+</RelativeLayout>

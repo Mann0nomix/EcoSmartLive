@@ -1,0 +1,15 @@
+<resources>
+
+    <!--
+        Base application theme for API 11+. This theme completely replaces
+        AppBaseTheme from res/values/styles.xml on API 11+ devices.
+    -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+    </style>
+
+    <style name="AppTheme.noActionBar" parent="Theme.AppCompat">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

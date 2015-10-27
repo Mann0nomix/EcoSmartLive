@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vortech_update_overlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9000000">
+
+    <TextView
+        android:id="@+id/vortech_overall_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="16dp"
+        android:textColor="@color/White"
+        android:layout_marginBottom="30dp"
+        android:text="@string/update_total_time"
+        android:gravity="center"
+        android:layout_centerInParent="true"/>
+
+    <ProgressBar
+        android:id="@+id/vortech_update_progress"
+        android:layout_width="match_parent"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/reset_progress_drawable"
+        android:max="1"
+        android:layout_height="10dp"
+        android:layout_above="@+id/vortech_overall_text"/>
+
+    <TextView
+        android:id="@+id/progress_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:textColor="@color/White"
+        android:layout_marginBottom="20dp"
+        android:text="@string/prepare_device_for_update"
+        android:gravity="center"
+        android:layout_above="@+id/vortech_update_progress"/>
+
+    <ProgressBar
+        android:id="@+id/vortech_preparation_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progress_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>

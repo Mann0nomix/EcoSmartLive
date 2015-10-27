@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_below="@+id/over_brightness_layout"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp">
+
+    <TextView
+        android:id="@+id/probability_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/storm_probability"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:paddingBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/probability_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:id="@+id/sun_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/probability_header"
+        android:src="@drawable/icon_sun"/>
+
+    <ImageView
+        android:id="@+id/weather_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/probability_header"
+        android:scaleType="centerInside"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/button_thunderstorms"/>
+
+    <SeekBar
+        android:id="@+id/probability_slider"
+        android:layout_below="@id/probability_header"
+        android:layout_toRightOf="@+id/sun_image"
+        android:layout_toLeftOf="@+id/weather_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/white_progress"
+        android:thumb="@drawable/blue_thumb"/>
+
+</RelativeLayout>

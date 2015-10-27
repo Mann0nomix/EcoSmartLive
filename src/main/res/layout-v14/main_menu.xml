@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Black"
+    tools:context=".MainMenu">
+
+    <ExpandableListView android:id="@+id/main_menu"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:listSelector="@drawable/list_selector"
+        android:scrollbars="none"
+        android:layout_above="@+id/footerframe"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="#121212"
+        android:id="@+id/footerframe">
+
+        <TextView
+            android:id="@+id/userFooter"
+            android:text="User name goes here"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/LightBlue"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/emailFooter"
+            android:text="Email name goes here"
+            android:textSize="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/White"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="50dp"
+            android:ellipsize="end"/>
+
+        <ImageView
+            android:id="@+id/sign_out_image"
+            android:contentDescription="Sign Out Image"
+            android:src="@drawable/icon_logout"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:onClick="signOut"/>
+
+    </FrameLayout>
+
+</RelativeLayout>

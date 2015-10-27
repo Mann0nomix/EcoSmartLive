@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg_photo"
+    tools:context=".WarningView">
+
+    <View
+        android:id="@+id/warning_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/black"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/warning_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="@string/warning_not_connect2"
+        android:textColor="@color/white"
+        android:paddingTop="20dp"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/warning_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/warning_not_connect"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:gravity="center_horizontal"
+        android:layout_above="@id/warning_text2"/>
+
+    <ImageView
+        android:id="@+id/warning_fish"
+        android:contentDescription="Dead Fish Warning"
+        android:src="@drawable/dead_fish"
+        android:paddingTop="20dp"
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/warning_text"/>
+
+    <Button
+        android:id="@+id/sign_out_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_out"
+        android:textColor="@color/black"
+        android:layout_below="@id/warning_text2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+</RelativeLayout>

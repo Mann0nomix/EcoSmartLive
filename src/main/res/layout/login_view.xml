@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:contentDescription="Login Background"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/login_bg_photo"/>
+
+    <ImageView
+        android:id="@+id/login_logo"
+        android:contentDescription="Logo No Icon"
+        android:src="@drawable/logo_esl_no_icon"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="70dp"/>
+
+    <EditText android:id="@+id/enter_username"
+        android:background="@drawable/api7_edittext"
+        android:inputType="text"
+        android:hint="@string/username_entry"
+        android:textColor="@android:color/white"
+        android:textColorHint="#33b5e5"
+        android:singleLine="true"
+        android:layout_width="260dp"
+        android:maxWidth="220dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="130dp"
+        android:ellipsize="start"/>
+
+    <EditText android:id="@+id/enter_password"
+        android:background="@drawable/api7_edittext"
+        android:inputType="textPassword"
+        android:hint="@string/password_entry"
+        android:password="true"
+        android:textColor="@android:color/white"
+        android:textColorHint="#33b5e5"
+        android:singleLine="true"
+        android:layout_width="260dp"
+        android:maxWidth="220dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="90dp"
+        android:ellipsize="start"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:text="@string/login"
+        android:textColor="@android:color/black"
+        android:onClick="executeLogin"
+        android:alpha=".90"
+        android:clickable="true"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="10dp"/>
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="17dp"/>
+
+</FrameLayout>
+

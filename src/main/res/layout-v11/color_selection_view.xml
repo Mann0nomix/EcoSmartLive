@@ -1,0 +1,553 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NavigationWheel">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/color_wheel_bg"
+        android:id="@+id/nav_main_layout"
+        tools:context=".ColorsView">
+
+        <TextView
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:background="@color/Black"
+            android:alpha=".60"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" />
+
+        <ImageView android:id="@+id/save_preset_button"
+            android:contentDescription="Save_Preset"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:src="@drawable/button_save_preset"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView android:id="@+id/back_to_schedule_button"
+            android:contentDescription="Back to Schedule"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:src="@drawable/icon_calendar"
+            android:clickable="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView android:id="@+id/dropcam_background"
+            android:contentDescription="Dropcam Background"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:src="@drawable/icon_video"
+            android:clickable="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:id="@+id/color_wheel_bubble"
+            android:contentDescription="Color Label"
+            android:layout_width="125dp"
+            android:layout_height="70dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/color_wheel_bubble"
+            android:layout_above="@+id/invis_circle"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/circle_detail"
+            android:textSize="24dp"
+            android:fontFamily="Condensed Regular"
+            android:textColor="@color/DodgerBlue"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="14dp"
+            android:layout_alignTop="@+id/color_wheel_bubble"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/kelvin_button"
+            android:background="@drawable/nav_button_on"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/kelvin"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/rgb_button"
+            android:background="@drawable/nav_button_off"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/rgb"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/slider_button"
+            android:background="@drawable/nav_button_off"
+            android:shape="rectangle"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/slider"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <ImageView
+            android:id="@+id/invis_circle"
+            android:contentDescription="Kelvin Wheel"
+            android:layout_height="345dp"
+            android:layout_width="345dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_slider_kelvin_no_labels"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/label5k"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5K"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/color_wheel_bubble"
+            android:layout_below="@id/color_wheel_bubble"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/label20k"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20K"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:layout_toLeftOf="@id/color_wheel_bubble"
+            android:layout_below="@id/color_wheel_bubble"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="30dp"/>
+
+    </RelativeLayout>
+
+    <ViewFlipper
+        android:id="@+id/switcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/kelvin_handler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/circle_slider_kelvin"
+                android:contentDescription="Kelvin Wheel"
+                android:layout_height="345dp"
+                android:layout_width="345dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circle_slider_kelvin_no_labels"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:layout_centerInParent="true"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/rgb_handler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/circle_slider_rgb"
+                android:contentDescription="RGB Wheel"
+                android:layout_height="345dp"
+                android:layout_width="345dp"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/circle_slider_rgb_no_labels"
+                android:scaleType="fitXY"/>
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/uv_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/uv"
+                android:textSize="15dp"
+                android:textColor="@color/White"/>
+
+            <TextView
+                android:id="@+id/uv_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:textSize="15dp"
+                android:textColor="@color/White"
+                android:layout_marginLeft="162dp"/>
+
+            <ImageButton
+                android:contentDescription="Up Button"
+                android:id="@+id/uv_left_up_button"
+                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:src="@drawable/icon_up_arrow"
+                android:layout_below="@+id/uv_label"
+                android:layout_toLeftOf="@+id/uv_left_down_button"
+                android:layout_alignBottom="@+id/uv_left_track" />
+
+            <ImageButton
+                android:contentDescription="Down Button"
+                android:id="@+id/uv_left_down_button"
+                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:src="@drawable/icon_down_arrow"
+                android:layout_below="@+id/uv_label"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/uv_left_track" />
+
+            <SeekBar
+                android:id="@+id/uv_left_track"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/uv_progress"
+                android:layout_below="@id/uv_label"
+                android:thumb="@drawable/blue_thumb"/>
+
+            <TextView
+                android:id="@+id/royal_blue_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/royal_blue"
+                android:textSize="15dp"
+                android:textColor="@color/White"
+                android:layout_below="@+id/uv_left_track"
+                android:layout_alignLeft="@+id/blue_text"/>
+
+            <TextView
+                android:id="@+id/royal_blue_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:textSize="15dp"
+                android:textColor="@color/White"
+                android:layout_below="@+id/uv_left_track"
+                android:layout_marginLeft="162dp" />
+
+            <ImageButton
+                android:contentDescription="Up Button"
+                android:id="@+id/royal_blue_up_button"
+                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:src="@drawable/icon_up_arrow"
+                android:layout_below="@+id/royal_blue_label"
+                android:layout_toLeftOf="@+id/royal_blue_down_button"
+                android:layout_alignBottom="@+id/royal_blue_left_track" />
+
+            <ImageButton
+                android:contentDescription="Down Button"
+                android:id="@+id/royal_blue_down_button"
+                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:src="@drawable/icon_down_arrow"
+                android:layout_below="@+id/royal_blue_label"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/royal_blue_left_track" />
+
+            <SeekBar
+                android:id="@+id/royal_blue_left_track"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/rb_progress"
+                android:layout_below="@+id/royal_blue_label"
+                android:thumb="@drawable/blue_thumb"/>
+
+            <TextView
+                android:id="@+id/blue_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/blue"
+                android:textSize="15dp"
+                android:textColor="@color/White"
+                android:layout_below="@+id/royal_blue_left_track"
+                android:layout_alignLeft="@+id/cool_white_text" />
+
+            <TextView
+                android:id="@+id/blue_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:textSize="15dp"
+                android:textColor="@color/White"
+                android:layout_below="@+id/royal_blue_left_track"
+                android:layout_marginLeft="162dp" />
+
+            <ImageButton
+                android:contentDescription="Up Button"
+                android:id="@+id/blue_up_button"
+                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:src="@drawable/icon_up_arrow"
+                android:layout_below="@+id/blue_label"
+                android:layout_toLeftOf="@+id/blue_down_button"
+                android:layout_alignBottom="@+id/blue_left_track" />
+
+            <ImageButton
+                android:contentDescription="Down Button"
+                android:id="@+id/blue_down_button"
+                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:src="@drawable/icon_down_arrow"
+                android:layout_below="@+id/blue_label"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/blue_left_track" />
+
+            <SeekBar
+                android:id="@+id/blue_left_track"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/blue_progress"
+                android:layout_below="@+id/blue_label"
+                android:thumb="@drawable/blue_thumb"/>
+
+            <TextView
+                android:id="@+id/cool_white_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cool_white"
+                android:textSize="15dp"
+                android:textColor="@color/White"
+                android:layout_below="@+id/blue_left_track" />
+
+            <TextView
+                android:id="@+id/white_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:textSize="15dp"
+                android:textColor="@color/White"
+                android:layout_below="@+id/blue_left_track"
+                android:layout_marginLeft="162dp" />
+
+            <ImageButton
+                android:contentDescription="Up Button"
+                android:id="@+id/white_up_button"
+                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:src="@drawable/icon_up_arrow"
+                android:layout_below="@+id/white_label"
+                android:layout_toLeftOf="@+id/white_down_button"
+                android:layout_alignBottom="@+id/white_left_track" />
+
+            <ImageButton
+                android:contentDescription="Down Button"
+                android:id="@+id/white_down_button"
+                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:src="@drawable/icon_down_arrow"
+                android:layout_below="@+id/white_label"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/white_left_track" />
+
+            <SeekBar
+                android:id="@+id/white_left_track"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/white_progress"
+                android:layout_below="@id/white_label"
+                android:thumb="@drawable/blue_thumb"/>
+
+            <TextView
+                android:id="@+id/green_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/green"
+                android:textSize="15dp"
+                android:textColor="@color/White"
+                android:layout_below="@+id/white_left_track"
+                android:layout_alignLeft="@+id/cool_white_text" />
+
+            <TextView
+                android:id="@+id/green_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:textSize="15dp"
+                android:textColor="@color/White"
+                android:layout_alignTop="@+id/green_text"
+                android:layout_marginLeft="162dp" />
+
+            <ImageButton
+                android:contentDescription="Up Button"
+                android:id="@+id/green_up_button"
+                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:src="@drawable/icon_up_arrow"
+                android:layout_below="@+id/green_label"
+                android:layout_toLeftOf="@+id/green_down_button"
+                android:layout_alignBottom="@+id/green_left_track" />
+
+            <ImageButton
+                android:contentDescription="Down Button"
+                android:id="@+id/green_down_button"
+                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:src="@drawable/icon_down_arrow"
+                android:layout_below="@+id/green_label"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/green_left_track" />
+
+            <SeekBar
+                android:id="@+id/green_left_track"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/green_progress"
+                android:layout_below="@id/green_label"
+                android:thumb="@drawable/blue_thumb"/>
+
+            <TextView
+                android:id="@+id/red_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/red"
+                android:textSize="15dp"
+                android:textColor="@color/White"
+                android:layout_below="@+id/green_left_track"
+                android:layout_alignLeft="@+id/brightness_text" />
+
+            <TextView
+                android:id="@+id/red_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:textSize="15dp"
+                android:textColor="@color/White"
+                android:layout_alignTop="@+id/red_text"
+                android:layout_marginLeft="162dp" />
+
+            <ImageButton
+                android:contentDescription="Up Button"
+                android:id="@+id/red_up_button"
+                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:src="@drawable/icon_up_arrow"
+                android:layout_below="@+id/red_label"
+                android:layout_toLeftOf="@+id/red_down_button"
+                android:layout_alignBottom="@+id/red_left_track" />
+
+            <ImageButton
+                android:contentDescription="Down Button"
+                android:id="@+id/red_down_button"
+                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:src="@drawable/icon_down_arrow"
+                android:layout_below="@+id/red_label"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/red_left_track" />
+
+            <SeekBar
+                android:id="@+id/red_left_track"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/red_progress"
+                android:layout_below="@id/red_label"
+                android:thumb="@drawable/blue_thumb"/>
+
+            <TextView
+                android:id="@+id/brightness_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/brightness"
+                android:textSize="15dp"
+                android:textColor="@color/White"
+                android:layout_below="@+id/red_left_track"
+                android:layout_alignLeft="@+id/cool_white_text" />
+
+            <TextView
+                android:id="@+id/brightness_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:textSize="15dp"
+                android:textColor="@color/White"
+                android:layout_below="@+id/red_left_track"
+                android:layout_marginLeft="162dp" />
+
+            <ImageButton
+                android:contentDescription="Up Button"
+                android:id="@+id/brightness_up_button"
+                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:src="@drawable/icon_up_arrow"
+                android:layout_below="@+id/brightness_label"
+                android:layout_toLeftOf="@+id/brightness_down_button"
+                android:layout_alignBottom="@+id/brightness_track"/>
+
+            <ImageButton
+                android:contentDescription="Down Button"
+                android:id="@+id/brightness_down_button"
+                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:src="@drawable/icon_down_arrow"
+                android:layout_below="@+id/brightness_label"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/brightness_track"/>
+
+            <SeekBar
+                android:id="@+id/brightness_track"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/bright_progress"
+                android:layout_below="@+id/brightness_label"
+                android:thumb="@drawable/blue_thumb"/>
+
+        </RelativeLayout>
+
+    </ViewFlipper>
+
+</RelativeLayout>

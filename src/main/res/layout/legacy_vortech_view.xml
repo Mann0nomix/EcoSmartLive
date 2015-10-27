@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.ecotechmarine.ecosmartlive_android.LegacyVortech">
+
+    <TextView
+        android:id="@+id/vortech_title"
+        android:text="@string/add_legacy_vortech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:maxWidth="275dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:paddingLeft="20dp"
+        android:paddingTop="30dp"/>
+
+    <ImageView
+        android:id="@+id/pump_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_mp10"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:layout_alignParentRight="true"
+        android:tint="@color/silver"/>
+
+    <TextView
+        android:id="@+id/vortech_instructions"
+        android:text="@string/turn_off_all_pumps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vortech_title"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"/>
+
+    <ImageView
+        android:id="@+id/pump_control_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_pump_off"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/vortech_instructions"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
